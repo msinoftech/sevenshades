@@ -1,0 +1,123 @@
+import Image from "next/image";
+import Link from "next/link";
+import Button from "@/components/ui/Button";
+
+const CTA_PERKS = [
+  "100% Free Estimate",
+  "No Hidden Costs",
+  "Quick Response",
+  "Satisfaction Guaranteed",
+];
+
+function CalendarIcon() {
+  return (
+    <span className="hidden size-10 shrink-0 items-center justify-center rounded-full border border-white/80 bg-white/30 text-white transition-transform duration-300 group-hover:scale-105 sm:inline-flex sm:size-11">
+      <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <rect
+        x="3.5"
+        y="5"
+        width="17"
+        height="15.5"
+        rx="2"
+        stroke="currentColor"
+        strokeWidth="1.7"
+      />
+      <path
+        d="M3.5 10h17M8 3.5V7M16 3.5V7"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+      />
+      <path
+        d="m10 15 1.5 1.5L14.5 13"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+    </span>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg
+      width="12"
+      height="12"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="m5 12 5 5L20 7"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export default function CallToAction() {
+  return (
+    <section className="bg-gray-50 py-14 sm:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative isolate overflow-hidden rounded-[1.75rem] bg-[#050A14] sm:rounded-[2.25rem] lg:rounded-[2.75rem]">
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-full sm:w-[55%] lg:w-[48%]">
+            <Image
+              src="/images/services/service-metallic.webp"
+              alt=""
+              width={800}
+              height={600}
+              className="w-full h-full object-cover object-center opacity-80"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,#050A14_0%,rgba(5,10,20,0.92)_28%,rgba(5,10,20,0.45)_58%,rgba(5,10,20,0.15)_100%)] sm:bg-[linear-gradient(90deg,#050A14_0%,rgba(5,10,20,0.95)_18%,rgba(5,10,20,0.55)_48%,transparent_78%)]" />
+          </div>
+
+          <div className="relative z-10 grid grid-cols-1 gap-8 px-6 py-10 sm:px-8 sm:py-12 lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-12 lg:py-14">
+            {/* Left: headline + CTAs */}
+            <div className="lg:col-span-7">
+              <h2 className=" text-[1.55rem] font-bold tracking-wide text-white sm:text-3xl lg:text-[2.15rem] lg:leading-[1.15]">
+                Ready To{" "}
+                <span className="text-[var(--brand-color)]">Upgrade</span> Your
+                Floors?
+              </h2>
+              <p className="text-white/70">Get a free consultation and estimate today.</p>
+
+              <div className="mt-6 flex flex-wrap items-center gap-3 sm:gap-4">
+                <Button href="/contact-us" className="max-[450px]:w-full">Get Free Quote</Button>
+                <Link
+                  href="/contact-us"
+                  className="group inline-flex items-center justify-center gap-0 rounded-xl border border-white/75 bg-transparent py-3 pr-6 pl-6 font-medium text-sm text-white transition-colors hover:border-white hover:bg-white/10 max-[450px]:w-full sm:justify-between sm:gap-2.5 sm:rounded-full sm:pr-1.5 sm:pl-7 sm:py-1.5"
+                >
+                  Schedule Consultation
+                  <CalendarIcon />
+                </Link>
+              </div>
+            </div>
+
+            {/* Center checklist */}
+            <div className="lg:col-span-5 lg:justify-self-end xl:pr-8">
+              <ul className="flex flex-col gap-3.5 sm:gap-4">
+                {CTA_PERKS.map((perk) => (
+                  <li key={perk} className="flex items-center gap-3 text-sm text-white sm:text-[0.95rem]">
+                    <span className="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-[var(--brand-color)] text-white"><CheckIcon /></span>
+                    {perk}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
