@@ -1,5 +1,6 @@
 export const APP_NAME = "Seven Shades";
 export const BASE_URL = "https://sevenshades.vercel.app";
+//export const BASE_URL = "https://sevenshadesepoxy.ca";
 //export const BASE_URL = "http://localhost:3001";
 
 export const contactInfo = {
