@@ -168,27 +168,25 @@ export default function Navbar() {
 
   return (
     <header className={`${isHome ? "fixed" : "sticky"} top-0 z-50 w-full`}>
-      <nav
-        className={`relative z-50 transition-[background-color,box-shadow,backdrop-filter,border-color] duration-300 ${
+      <nav className={`relative z-50 transition-[background-color,box-shadow,backdrop-filter,border-color] duration-300 ${
           navSolid
             ? "border-b border-white/10 bg-[var(--black)] backdrop-blur-xl"
             : "border-b border-transparent bg-transparent backdrop-blur-md"
         }`}
-        aria-label="Primary"
+        aria-label="Main navigation"
       >
         <div className="container mx-auto flex items-center justify-between gap-4 py-3 px-4 sm:px-6 lg:px-8">
           <Link href={BASE_URL}>
             <Image src={logo} alt="Seven Shades" width={250} height={250} />
           </Link>
 
-          <ul role="navigation" className="hidden items-center gap-1 xl:flex">
+          <ul className="hidden items-center gap-1 xl:flex">
             {NAV_LINKS.map((link) => {
               const active = isActive(link.href);
 
               if ("hasDropdown" in link && link.hasDropdown) {
                 return (
                   <li
-                    role="menuitem"
                     key={link.href}
                     ref={desktopServicesRef}
                     className="group relative"
@@ -196,7 +194,6 @@ export default function Navbar() {
                     onMouseLeave={() => setDesktopServicesOpen(false)}
                   >
                     <Link
-                      role="link"
                       href={link.href}
                       className={`relative inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors ${
                         servicesActive
@@ -229,13 +226,13 @@ export default function Navbar() {
                       }`}
                     >
                       <div className="overflow-hidden rounded-xl border border-white/10 bg-[var(--black)] shadow-xl shadow-black/40">
-                        <ul className="py-2" role="menu">
+                        <ul className="py-2" role="menu" aria-label="Services">
                           {SERVICE_LINKS.map((service) => {
                             const serviceActive = pathname === service.href;
                             return (
-                              <li key={service.href} role="menuitem">
+                              <li key={service.href} role="none">
                                 <Link
-                                  role="link"
+                                  role="menuitem"
                                   href={service.href}
                                   className={`block px-4 py-2.5 text-sm font-medium transition-colors ${
                                     serviceActive
@@ -347,80 +344,80 @@ export default function Navbar() {
           </button>
         </div>
 
-        <ul role="navigation" className="flex flex-1 flex-col gap-1 overflow-y-auto px-3 py-4">
-          {NAV_LINKS.map((link) => {
-            const active = isActive(link.href);
+        <nav aria-label="Mobile navigation">
+          <ul className="flex flex-1 flex-col gap-1 overflow-y-auto px-3 py-4">
+            {NAV_LINKS.map((link) => {
+              const active = isActive(link.href);
 
-            if ("hasDropdown" in link && link.hasDropdown) {
+              if ("hasDropdown" in link && link.hasDropdown) {
+                return (
+                  <li key={link.href}>
+                    <button
+                      type="button"
+                      className={`flex w-full items-center justify-between rounded-lg px-4 py-3.5 text-left text-base font-medium transition-colors ${
+                        servicesActive
+                          ? "bg-white/5 text-[var(--brand-color)]"
+                          : "text-white/90 hover:bg-white/5 hover:text-white"
+                      }`}
+                      aria-expanded={mobileServicesOpen}
+                      aria-controls={`${menuId}-services`}
+                      onClick={() => setMobileServicesOpen((open) => !open)}
+                    >
+                      <span>{link.label}</span>
+                      <ChevronIcon open={mobileServicesOpen} />
+                    </button>
+
+                    <div
+                      id={`${menuId}-services`}
+                      className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                        mobileServicesOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                      }`}
+                    >
+                      <ul className="overflow-hidden" aria-label={`${link.label} submenu`}>
+                        {MOBILE_SERVICE_LINKS.map((service) => {
+                          const serviceActive = pathname === service.href;
+                          return (
+                            <li key={service.href}>
+                              <Link
+                                href={service.href}
+                                className={`block rounded-lg py-2.5 pr-4 pl-8 text-sm font-medium transition-colors ${
+                                  serviceActive
+                                    ? "bg-white/5 text-[var(--brand-color)]"
+                                    : "text-white/70 hover:bg-white/5 hover:text-white"
+                                }`}
+                                aria-current={serviceActive ? "page" : undefined}
+                                onClick={() => setMenuOpen(false)}
+                              >
+                                {service.label}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </li>
+                );
+              }
+
               return (
-                <li role="menuitem" key={link.href}>
-                  <button
-                    role="button"
-                    type="button"
-                    className={`flex w-full items-center justify-between rounded-lg px-4 py-3.5 text-left text-base font-medium transition-colors ${
-                      servicesActive
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={`block rounded-lg px-4 py-3.5 text-base font-medium transition-colors ${
+                      active
                         ? "bg-white/5 text-[var(--brand-color)]"
                         : "text-white/90 hover:bg-white/5 hover:text-white"
                     }`}
-                    aria-expanded={mobileServicesOpen}
-                    aria-controls={`${menuId}-services`}
-                    onClick={() => setMobileServicesOpen((open) => !open)}
+                    aria-current={active ? "page" : undefined}
+                    onClick={() => setMenuOpen(false)}
                   >
-                    <span>{link.label}</span>
-                    <ChevronIcon open={mobileServicesOpen} />
-                  </button>
-
-                  <div
-                    id={`${menuId}-services`}
-                    className={`grid transition-[grid-template-rows] duration-300 ease-out ${
-                      mobileServicesOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-                    }`}
-                  >
-                    <ul className="overflow-hidden">
-                      {MOBILE_SERVICE_LINKS.map((service) => {
-                        const serviceActive = pathname === service.href;
-                        return (
-                          <li role="menuitem" key={service.href}>
-                            <Link
-                              role="link"
-                              href={service.href}
-                              className={`block rounded-lg py-2.5 pr-4 pl-8 text-sm font-medium transition-colors ${
-                                serviceActive
-                                  ? "bg-white/5 text-[var(--brand-color)]"
-                                  : "text-white/70 hover:bg-white/5 hover:text-white"
-                              }`}
-                              aria-current={serviceActive ? "page" : undefined}
-                              onClick={() => setMenuOpen(false)}
-                            >
-                              {service.label}
-                            </Link>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
+                    {link.label}
+                  </Link>
                 </li>
               );
-            }
-
-            return (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={`block rounded-lg px-4 py-3.5 text-base font-medium transition-colors ${
-                    active
-                      ? "bg-white/5 text-[var(--brand-color)]"
-                      : "text-white/90 hover:bg-white/5 hover:text-white"
-                  }`}
-                  aria-current={active ? "page" : undefined}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+            })}
+          </ul>
+        </nav>
 
         <div className="border-t border-white/10 p-4">
           <a href={phoneHref} className="mb-4 flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-3 py-3 transition-colors hover:bg-white/10" onClick={() => setMenuOpen(false)}>
