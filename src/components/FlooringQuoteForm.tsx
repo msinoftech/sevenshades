@@ -23,31 +23,31 @@ const TONE_STYLES = {
     label: "text-white",
     field: "border-white/12 bg-[var(--black)]/70 text-white/80 placeholder:text-white/55 focus:border-[var(--brand-color)]/65 focus:bg-[var(--black)]/80",
     option: "bg-[var(--black)] text-white",
-    optionDisabled: "bg-[#0c1a2e] text-white/50",
+    optionDisabled: "bg-[#0c1a2e] text-white",
     chevron: "text-white/55",
     dividerLine: "bg-white/15",
-    dividerText: "text-white/45",
+    dividerText: "text-white",
     successBox: "border-white/15 bg-white/5",
     successTitle: "text-white",
     successBody: "text-white/65",
-    footer: "text-white/50",
+    footer: "text-white",
     error: "border-red-400/30 bg-red-500/10 text-red-200",
   },
   light: {
     shell: "border-black/10 bg-white shadow-xl",
     eyebrow: "text-[var(--black)]",
-    description: "text-black/60",
+    description: "text-black",
     label: "text-[var(--black)]",
     field: "border-black/12 bg-[#F7F8FA] text-[var(--black)] placeholder:text-black/40 focus:border-[var(--brand-color)]/60 focus:bg-white",
     option: "bg-white text-[var(--black)]",
     optionDisabled: "bg-[#F7F8FA] text-black/45",
     chevron: "text-black/40",
     dividerLine: "bg-black/10",
-    dividerText: "text-black/40",
+    dividerText: "text-black",
     successBox: "border-black/10 bg-[#F7F8FA]",
     successTitle: "text-[var(--black)]",
     successBody: "text-black/60",
-    footer: "text-black/45",
+    footer: "text-black",
     error: "border-red-300 bg-red-50 text-red-700",
   },
 } as const;
@@ -57,7 +57,7 @@ const LIGHT_SM_DARK_STYLES = {
   shell:
     "border-black/10 bg-white shadow-xl sm:border-[var(--brand-color)]/50 sm:bg-[var(--black)]/90 sm:shadow-md sm:backdrop-blur-xl",
   eyebrow: "text-[var(--black)] sm:text-white",
-  description: "text-black/60 sm:text-white/80",
+  description: "text-black sm:text-white",
   label: "text-[var(--black)] sm:text-white",
   field:
     "border-black/12 bg-[#F7F8FA] text-[var(--black)] placeholder:text-black/40 focus:border-[var(--brand-color)]/60 focus:bg-white sm:border-white/12 sm:bg-[var(--black)]/70 sm:text-white/80 sm:placeholder:text-white/55 sm:focus:border-[var(--brand-color)]/65 sm:focus:bg-[var(--black)]/80",
@@ -65,11 +65,11 @@ const LIGHT_SM_DARK_STYLES = {
   optionDisabled: "bg-[#F7F8FA] text-black/45 sm:bg-[#0c1a2e] sm:text-white/50",
   chevron: "text-black/40 sm:text-white/55",
   dividerLine: "bg-black/10 sm:bg-white/15",
-  dividerText: "text-black/40 sm:text-white/45",
+  dividerText: "text-black sm:text-white",
   successBox: "border-black/10 bg-[#F7F8FA] sm:border-white/15 sm:bg-white/5",
   successTitle: "text-[var(--black)] sm:text-white",
   successBody: "text-black/60 sm:text-white/65",
-  footer: "text-black/45 sm:text-white/50",
+  footer: "text-black sm:text-white",
   error:
     "border-red-300 bg-red-50 text-red-700 sm:border-red-400/30 sm:bg-red-500/10 sm:text-red-200",
 } as const;
@@ -85,8 +85,8 @@ function resolveToneStyles(tone: FormTone, smTone?: FormTone): ToneStyles {
 
 function LockIcon() {
   return (
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" strokeWidth="1.8" />
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <rect x="5" y="11" width="14" height="12" rx="2" stroke="currentColor" strokeWidth="1.8" />
       <path
         d="M8 11V8a4 4 0 1 1 8 0v3"
         stroke="currentColor"
@@ -132,8 +132,8 @@ export default function FlooringQuoteForm({
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const fieldClass = `w-full rounded-lg border px-3 py-2.5 text-xs outline-none transition-[border-color,background-color,box-shadow] ${styles.field}`;
-  const labelClass = `mb-1.5 block text-[0.7rem] font-semibold tracking-[0.04em] uppercase ${styles.label}`;
+  const fieldClass = `w-full rounded-lg border px-3 py-2.5 text-sm sm:text-xs outline-none transition-[border-color,background-color,box-shadow] ${styles.field}`;
+  const labelClass = `mb-1.5 block text-sm sm:text-xs font-semibold tracking-[0.04em] uppercase ${styles.label}`;
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -270,7 +270,7 @@ export default function FlooringQuoteForm({
             <div className="flex items-center gap-3 py-1.5">
               <span className={`h-px flex-1 ${styles.dividerLine}`} />
               <span
-                className={`text-[0.68rem] font-semibold tracking-[0.14em] uppercase ${styles.dividerText}`}
+                className={`text-xs font-semibold tracking-[0.14em] uppercase ${styles.dividerText}`}
               >
                 Your Details
               </span>
@@ -332,7 +332,7 @@ export default function FlooringQuoteForm({
               </Button>
             </div>
 
-            <p className={`flex gap-1.5 pt-0.5 text-[0.72rem] ${styles.footer}`}>
+            <p className={`flex gap-1.5 pt-0.5 text-sm sm:text-xs ${styles.footer}`}>
               <LockIcon />
               No obligation. Your information is safe and secure.
             </p>

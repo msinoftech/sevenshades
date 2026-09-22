@@ -32,17 +32,17 @@ const sizeStyles: Record<
 > = {
   hero: {
     titleGap: "my-4",
-    title: "text-[2.4rem] font-bold leading-[1.05] tracking-[-0.025em] sm:text-[3.4rem] lg:text-[4rem]",
+    title: "text-[2.4rem] font-bold leading-[1.02] sm:text-[3.4rem] lg:text-[4rem]",
     description: "",
   },
   page: {
     titleGap: "my-4",
-    title: "text-[2.55rem] font-bold leading-[1.02] tracking-[-0.035em] sm:text-[3.5rem] lg:text-[4.25rem]",
+    title: "text-[2.4rem] font-bold leading-[1.02] sm:text-[3.4rem] lg:text-[4rem]",
     description: "",
   },
   section: {
     titleGap: "my-4",
-    title: "text-[1.85rem] font-bold tracking-tight sm:text-4xl lg:text-[2.75rem]",
+    title: "text-[1.85rem] font-bold leading-[1.02] sm:text-4xl lg:text-[2.75rem]",
     description: "",
   },
 };
@@ -87,14 +87,14 @@ export default function Heading({
       {eyebrow ? (
         <div
           className={cx(
-            "flex items-center gap-3",
-            isCenter && "justify-center",
+            "flex w-fit items-center gap-3 border border-blue-100 bg-blue-50 px-3 py-1 rounded-full sm:border-none sm:bg-transparent sm:px-0 sm:py-0 sm:rounded-none",
+            isCenter && "justify-center mx-auto",
           )}
         >
           {showLine ? (
             <span
               className={cx(
-                "h-px w-10 bg-[var(--brand-color)] animate-about-line",
+                "hidden sm:inline h-px w-10 bg-[var(--brand-color)] animate-about-line",
                 lineClassName,
               )}
               aria-hidden="true"
