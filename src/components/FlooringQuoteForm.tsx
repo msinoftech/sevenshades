@@ -196,7 +196,7 @@ export default function FlooringQuoteForm({
           <span className="h-px w-10 bg-[var(--brand-color)]" />
         </div>
 
-        <p className={`mt-3 text-sm ${styles.description}`}>Tell us about your project and we&apos;ll get back to you with a custom quote.</p>
+        <p className={`mt-3 text-sm ${styles.description}`}>Tell us about your project and get a free custom epoxy installation quote.</p>
 
         {submitted ? (
           <div className={`mt-6 rounded-xl border px-4 py-5 text-center ${styles.successBox}`} role="status">

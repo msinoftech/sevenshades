@@ -13,27 +13,28 @@ import { counterItems } from "@/lib/counters";
 import { BASE_URL, contactInfo } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Epoxy Flooring Surrey, BC | Seven Shades",
-  description: "Hire a reliable contractor for professional epoxy floor installation in Surrey, BC. Custom finishes for homes and businesses. Get a free quote today!",
-  keywords: [ "epoxy flooring Surrey", "garage epoxy flooring", "commercial epoxy floors", "residential epoxy flooring", "premium epoxy solutions", "metallic epoxy flooring" ],
+  title: "Seven Shades | Epoxy Flooring Contractor in Surrey, BC ",
+  description: "Get a free quote for your epoxy flooring installation in Surrey. Seven Shades, an experienced floor contractor for custom finishes.",
+  keywords: ["epoxy floor contractors surrey", "free epoxy flooring installation quote BC", "epoxy flooring contractor in surrey BC", "epoxy floor installation contractors", "free quote epoxy floor installation"],
+  
   alternates: { 
     canonical: BASE_URL
   },
   openGraph: {
-    title: "Epoxy Flooring Surrey, BC | Seven Shades",
-    description: "Hire a reliable contractor for professional epoxy floor installation in Surrey, BC. Custom finishes for homes and businesses. Get a free quote today!",
+    title: "Seven Shades | Epoxy Flooring Contractor in Surrey, BC ",
+    description: "Get a free quote for your epoxy flooring installation in Surrey. Seven Shades, an experienced floor contractor for custom finishes.",
     type: "website",
     images: [
       {
         url: BASE_URL + contactInfo.DEFAULT_IMAGE,
-        alt: "Epoxy Flooring Surrey, BC | Seven Shades",
+        alt: "Seven Shades | Epoxy Flooring Contractor in Surrey, BC ",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Epoxy Flooring Surrey, BC | Seven Shades",
-    description: "Hire a reliable contractor for professional epoxy floor installation in Surrey, BC. Custom finishes for homes and businesses. Get a free quote today!",
+    title: "Seven Shades | Epoxy Flooring Contractor in Surrey, BC ",
+    description: "Get a free quote for your epoxy flooring installation in Surrey. Seven Shades, an experienced floor contractor for custom finishes.",
     images: [BASE_URL + contactInfo.DEFAULT_IMAGE],
   },
 };

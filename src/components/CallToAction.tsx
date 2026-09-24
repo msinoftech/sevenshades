@@ -74,7 +74,7 @@ export default function CallToAction() {
           <div className="pointer-events-none absolute inset-y-0 right-0 w-full sm:w-[55%] lg:w-[48%]">
             <Image
               src="/images/services/service-metallic.webp"
-              alt=""
+              alt="free quote epoxy floor installation"
               width={800}
               height={600}
               className="w-full h-full object-cover object-center opacity-80"

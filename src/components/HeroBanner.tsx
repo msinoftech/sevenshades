@@ -4,40 +4,6 @@ import FlooringQuoteForm from "@/components/FlooringQuoteForm";
 import Heading from "@/components/Heading";
 import Button from "@/components/ui/Button";
 
-const TRUST_ITEMS = [
-  {
-    id: "local",
-    line1: "Locally Owned",
-    line2: "& Operated",
-    icon: (
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0"/><circle cx="12" cy="8" r="2"/><path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712"/></svg>
-    ),
-  },
-  {
-    id: "experience",
-    line1: "10+ Years",
-    line2: "Experience",
-    icon: (
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>
-    ),
-  },
-  {
-    id: "materials",
-    line1: "Premium Quality",
-    line2: "Materials",
-    icon: (
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M10.5 3 8 9l4 13 4-13-2.5-6"/><path d="M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z"/><path d="M2 9h20"/></svg>
-    ),
-  },
-  {
-    id: "guarantee",
-    line1: "Satisfaction",
-    line2: "Guaranteed",
-    icon: (
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
-    ),
-  },
-];
 function GalleryIcon() {
   return (
     <span className="hidden size-10 shrink-0 items-center justify-center rounded-full border border-white/80 bg-white/30 text-white transition-transform duration-300 group-hover:scale-105 sm:inline-flex sm:size-11">
@@ -50,7 +16,7 @@ function GalleryIcon() {
 export default function HeroBanner() {
   return (
     <section className="relative overflow-hidden">
-      <Image src="/images/hero-epoxy-floor-1.2.1.webp" alt="Premium epoxy garage floor with reflective flake finish" fill priority  sizes="100vw" className="hidden sm:block object-cover"/>
+      <Image src="/images/hero-epoxy-floor-1.2.1.webp" alt="epoxy floor contractors surrey" fill priority  sizes="100vw" className="hidden sm:block object-cover"/>
 
       <div className="hidden sm:block w-full xl:w-1/2 h-full absolute inset-0 bg-gradient-to-r from-[#05070b]/85 via-[#05070b]/70 via-70% md:via-70% lg:via-50% xl:via-80% 2xl:via-70% to-transparent"></div>
 
@@ -59,7 +25,6 @@ export default function HeroBanner() {
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-8 xl:gap-12">
             <div className="sm:animate-hero-rise lg:col-span-7">
               <div>
-
                 <div className="max-w-xl">
                   <Heading
                     tag="h1"
@@ -67,7 +32,7 @@ export default function HeroBanner() {
                     tone="light"
                     eyebrow="Residential &amp; Commercial Epoxy Flooring"
                     title={<>Premium Epoxy Flooring In <span className="text-[var(--brand-color)]">Surrey, BC</span></>}
-                    description="Durable. Beautiful. Built to Last. Transform your garage, basement, or commercial space with high-performance epoxy flooring installed by local experts."
+                    description="Durable. Beautiful. Built to Last. Transform your garage, basement, or commercial space with high-performance epoxy flooring installed by local contractors."
                     titleClassName="sm:uppercase"
                   />
                 </div>

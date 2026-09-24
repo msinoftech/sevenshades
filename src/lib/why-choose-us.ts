@@ -16,8 +16,8 @@ export type WhyChooseFeature = {
 
 export const whyChooseFeatures: WhyChooseFeature[] = [
   {
-    id: "lifetime-durability",
-    title: "Lifetime Durability",
+    id: "long-lasting-durability",
+    title: "Long-Lasting Durability",
     description: "Built to last for decades",
     icon: "lifetime",
   },

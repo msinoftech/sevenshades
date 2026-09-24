@@ -188,7 +188,7 @@ export default function Visualize() {
               align="left"
               eyebrow="BEFORE & AFTER"
               title="Experience the Difference"
-              description="The same space. A stunning transformation."
+              description="Same space, but vibrant with an epoxy floor installation."
             />
           </div>
 
@@ -212,7 +212,7 @@ export default function Visualize() {
               <div className="absolute inset-0">
                 <Image
                   src="/images/before-after/after-floor.webp"
-                  alt="Warehouse with polished premium epoxy floor"
+                  alt="free epoxy flooring installation quote BC"
                   width={700}
                   height={500}
                   className="w-full h-full object-cover"
@@ -225,7 +225,7 @@ export default function Visualize() {
               <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}>
                 <Image
                   src="/images/before-after/before-floor.webp"
-                  alt="Warehouse with worn unfinished concrete floor"
+                  alt="epoxy flooring contractor in surrey BC"
                   width={700}
                   height={500}
                   className="w-full h-full object-cover"

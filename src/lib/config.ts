@@ -1,6 +1,6 @@
 export const APP_NAME = "Seven Shades";
 export const BASE_URL = "https://sevenshadesepoxy.ca";
-//export const BASE_URL = "http://localhost:3001";
+//export const BASE_URL = "http://localhost:3002";
 
 export const contactInfo = {
     logo: `/saven-shade-logo.webp`,

@@ -165,7 +165,7 @@ export default function WhyChooseUs() {
                   <span className="text-[var(--brand-color)]">Forever.</span>
                 </>
               }
-              description="Our epoxy floors deliver unmatched performance and elevate every space."
+              description="Our epoxy floors deliver unmatched results and elevate every space."
             />
 
             <Button href="/about-us">More About Us</Button>
