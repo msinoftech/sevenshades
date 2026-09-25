@@ -410,8 +410,8 @@ function createBlogPostSchema(slug: string) {
   return createPageGraph({
     "type": "WebPage",
     "path": path,
-    "name": `${post.title} | ${APP_NAME}`,
-    "description": post.excerpt,
+    "name": post.metaTitle,
+    "description": post.metaDescription,
     "image": post.image,
     "breadcrumbs": [
       ...homeCrumbs,

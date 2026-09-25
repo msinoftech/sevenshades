@@ -164,7 +164,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <section className="relative bg-white py-14 sm:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            <article className="lg:col-span-2">
+            <article className="lg:col-span-2 space-y-6">
               {/* Image */}
               <div className="relative">
                 <div className="relative aspect-[16/7] overflow-hidden rounded-[1.75rem] shadow-[0_30px_60px_-30px_rgba(10,16,24,0.35)] sm:rounded-[2rem]">
@@ -196,11 +196,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </div>
               ) : null}
 
-              <div className="space-y-5">
-                {post.content.map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
-              </div>
+              
+              <div className="blog-content space-y-2" dangerouslySetInnerHTML={{ __html: post.content }} />              
 
               {post.faqs?.length ? (
                 <div className="mt-14">
