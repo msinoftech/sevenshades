@@ -7,26 +7,22 @@ export const serviceFaqs: Record<string, ServiceFaq[]> = {
   "garage-floors": [
     {
       question: "How long does garage epoxy flooring last?",
-      answer:
-        "A properly prepped and installed Seven Shades garage system typically lasts many years with normal residential use. Longevity depends on prep quality, topcoat, UV exposure, and how vehicles and chemicals are managed.",
+      answer: "A floor's lifespan depends on how concrete was prepared before coating, the coating system itself, UV exposure, traffic, and maintenance. A properly prepared and professionally installed garage floor can last many years under normal use.",
     },
     {
       question: "Can I park cars soon after install?",
-      answer:
-        "Light foot traffic is often possible within 24–48 hours. Vehicle parking is usually recommended after 48–72 hours depending on temperature and the system we install — we confirm exact timing at handoff.",
+      answer: "Light foot traffic is often possible within 24–48 hours. Vehicle parking is usually recommended after 48–72 hours depending on temperature and the system we install — we confirm exact timing at handoff.",
     },
     {
       question: "Will epoxy peel from my garage floor?",
-      answer:
-        "Peeling is almost always a prep or moisture issue — not epoxy itself. We grind for mechanical adhesion, remediate contaminants, and only install when conditions support a lasting bond.",
+      answer: "Peeling is almost always a prep or moisture issue — not epoxy itself. We grind for mechanical adhesion, remediate contaminants, and only install when conditions support a lasting bond.",
     },
     {
       question: "Solid color or flake — which should I choose?",
-      answer:
-        "Choose solid for a clean showroom look. Choose full flake when you want more grip and a surface that hides dust and micro-scuffs between cleanings. We’ll recommend based on how you use the space.",
+      answer: "Choose solid for a clean showroom look. Choose full flake when you want more grip and a surface that hides dust and micro-scuffs between cleanings. We’ll recommend based on how you use the space.",
     },
   ],
-  commercial: [
+  "commercial": [
     {
       question: "How long does commercial epoxy flooring last?",
       answer:
@@ -48,7 +44,7 @@ export const serviceFaqs: Record<string, ServiceFaq[]> = {
         "Solid fits polished offices and showrooms. Flake adds grip and hides micro-wear in high-traffic retail. Quartz suits corridors and service zones that need maximum toughness. We’ll match the system to your use case.",
     },
   ],
-  residential: [
+  "residential": [
     {
       question: "How long does residential epoxy flooring last?",
       answer:

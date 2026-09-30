@@ -517,7 +517,10 @@ export default function CommercialPage() {
         </div>
       </section>
 
-      <CallToAction />
+      <CallToAction
+        title={<>Ready For A <span className="text-[var(--brand-color)]">Commercial</span> Floor?</>}
+        description="Get a free quote for durable epoxy built for shops, warehouses, and heavy daily traffic."
+      />
     </>
   );
 }

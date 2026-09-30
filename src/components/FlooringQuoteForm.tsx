@@ -132,8 +132,8 @@ export default function FlooringQuoteForm({
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const fieldClass = `w-full rounded-lg border px-3 py-2.5 text-sm sm:text-xs outline-none transition-[border-color,background-color,box-shadow] ${styles.field}`;
-  const labelClass = `mb-1.5 block text-sm sm:text-xs font-semibold tracking-[0.04em] uppercase ${styles.label}`;
+  const fieldClass = `w-full rounded-lg border px-3 py-2 text-sm outline-none transition-[border-color,background-color,box-shadow] ${styles.field}`;
+  const labelClass = `mb-1.5 block text-sm font-semibold tracking-[0.04em] uppercase ${styles.label}`;
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -332,7 +332,7 @@ export default function FlooringQuoteForm({
               </Button>
             </div>
 
-            <p className={`flex gap-1.5 pt-0.5 text-sm sm:text-xs ${styles.footer}`}>
+            <p className={`flex gap-1 pt-0.5 text-sm ${styles.footer}`}>
               <LockIcon />
               No obligation. Your information is safe and secure.
             </p>

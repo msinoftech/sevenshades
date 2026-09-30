@@ -187,7 +187,7 @@ export default function Visualize() {
               tone="dark"
               align="left"
               eyebrow="BEFORE & AFTER"
-              title="Experience the Difference"
+              title="See the Difference a Professional Finish Makes"
               description="Same space, but vibrant with an epoxy floor installation."
             />
           </div>

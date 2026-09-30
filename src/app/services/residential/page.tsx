@@ -514,7 +514,10 @@ export default function ResidentialPage() {
         </div>
       </section>
 
-      <CallToAction />
+      <CallToAction
+        title={<>Ready To <span className="text-[var(--brand-color)]">Upgrade</span> Your Home?</>}
+        description="Get a free estimate for seamless residential epoxy on basements and interior concrete."
+      />
     </>
   );
 }

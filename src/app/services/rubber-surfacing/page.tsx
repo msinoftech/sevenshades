@@ -516,7 +516,10 @@ export default function RubberSurfacingPage() {
         </div>
       </section>
 
-      <CallToAction />
+      <CallToAction
+        title={<>Ready For <span className="text-[var(--brand-color)]">Rubber</span> Surfacing?</>}
+        description="Get a free quote for durable rubber surfacing built for comfort, grip, and lasting performance."
+      />
     </>
   );
 }

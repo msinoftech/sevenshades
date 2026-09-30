@@ -80,7 +80,7 @@ export default function FlakeColorOptions() {
       <div className="hidden sm:block pointer-events-none absolute -bottom-32 left-0 h-72 w-72 rounded-full bg-black/5 blur-3xl" />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-4xl text-center">
           <Heading
             tag="h2"
             align="center"
@@ -89,14 +89,14 @@ export default function FlakeColorOptions() {
             eyebrow="FLAKE EPOXY"
             title={
               <>
-                Garage Floors{" "}
+                Explore Garage Flake {" "}
                 <span className="text-[var(--brand-color)]">
-                  Flake Color Options.
+                Colors and Blends
                 </span>
               </>
             }
-            description="Decorative chip flake blends and solids in stock — tap any swatch to preview, then request your preferred blend for a free quote."
-            descriptionClassName="mx-auto max-w-2xl text-black/60"
+            description="Different garages need different finishes based on traffic, moisture, vehicle use, maintenance expectations, and the look you want."
+            descriptionClassName="text-black/60"
           />
         </div>
 
@@ -139,7 +139,7 @@ export default function FlakeColorOptions() {
                   <span className="h-px w-10 bg-[var(--brand-color)] animate-about-line" aria-hidden="true"></span>
                   <p className="text-xs font-bold tracking-[0.16em] text-[var(--brand-color)] uppercase">About this blend</p>
                 </div>
-                <div className="text-xl font-bold">{selected.name}</div>
+                <h3 className="text-xl font-bold">{selected.name}</h3>
                 <p>{selected.description}</p>
 
                 <div className="flex flex-wrap gap-2">

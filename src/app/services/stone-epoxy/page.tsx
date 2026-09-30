@@ -515,7 +515,10 @@ export default function StoneEpoxyPage() {
         </div>
       </section>
 
-      <CallToAction />
+      <CallToAction
+        title={<>Ready For A <span className="text-[var(--brand-color)]">Stone</span> Epoxy Floor?</>}
+        description="Get a free quote for textured stone epoxy with durable grip for garages, patios, and concrete."
+      />
     </>
   );
 }

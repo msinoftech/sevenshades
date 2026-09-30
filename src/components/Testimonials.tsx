@@ -107,7 +107,7 @@ export default function Testimonials() {
     <section className="bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div>
+          <div className="lg:max-w-3xl">
             <Heading
               tag="h2"
               size="section"
@@ -115,8 +115,8 @@ export default function Testimonials() {
               eyebrow="TESTIMONIALS"
               title={
                 <>
-                  Loved By{" "}
-                  <span className="text-[var(--brand-color)]">Thousands</span>
+                  Trusted by Homeowners and Businesses{" "}
+                  <span className="text-[var(--brand-color)]">Across Surrey</span>
                 </>
               }
             />

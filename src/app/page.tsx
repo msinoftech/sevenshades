@@ -74,7 +74,10 @@ export default function Home() {
       <Testimonials />
 
       {/* CTA Section */}
-      <CallToAction />
+      <CallToAction
+        title={<>Ready To <span className="text-[var(--brand-color)]">Upgrade</span> Your Floors?</>}
+        description="Get a free consultation and estimate today."
+      />
     </>
   );
 }

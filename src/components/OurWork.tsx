@@ -40,8 +40,8 @@ export default function OurWork() {
               eyebrow="OUR WORK"
               title={
                 <>
-                  Real Floors. Real{" "}
-                  <span className="text-[var(--brand-color)]">Results.</span>
+                  Explore Our Recent{" "}
+                  <span className="text-[var(--brand-color)]">Flooring Projects</span>
                 </>
               }
             />

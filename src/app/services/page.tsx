@@ -244,7 +244,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <CallToAction />
+      <CallToAction
+        title={<>Ready To <span className="text-[var(--brand-color)]">Choose</span> Your System?</>}
+        description="Tell us about your space and get a free consultation for garage, home, or commercial floors."
+      />
     </>
   );
 }

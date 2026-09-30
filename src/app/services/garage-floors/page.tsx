@@ -48,23 +48,19 @@ const specs = [
 const benefits = [
   {
     title: "Hot-tire & chemical resistant",
-    description:
-      "Formulated to resist tire softener, road salt, oil, and grease without etching or peeling — so your investment stays intact season after season.",
+    description: "Formulated to resist tire softener, road salt, oil, and grease without etching or peeling — so your investment stays intact season after season.",
   },
   {
-    title: "Easy everyday care",
-    description:
-      "A seamless non-porous surface that dust-mops clean. No stained concrete, no musty damp odors trapped in open pores.",
+    title: "Easy everyday maintenance",
+    description: "A seamless, non-porous surface that wipes clean with a simple mop. No stained concrete, no musty damp odors trapped in open pores.",
   },
   {
     title: "Grip where you need it",
-    description:
-      "Optional texture packages for wet-weather entries without sacrificing the polished, intentional look you want.",
+    description: "We offer texture system options for wet-weather entries without sacrificing the polished, intentional look you want.",
   },
   {
-    title: "Color that stays true",
-    description:
-      "UV-stable clears and pigmented systems that resist ambering under garage-door sunlight.",
+    title: "A Finish Built for Real Use",
+    description: "We recommend a finish that suits your space, whether it is a family garage, collector bay, workshop, or commercial service area.",
   },
 ];
 
@@ -173,7 +169,7 @@ export default function GarageFloorsPage() {
             <span className="text-[var(--brand-color)]">Outlast.</span>
           </>
         }
-        description="Showroom-grade epoxy for residential and collector garages — hot-tire resistant, easy to clean, finished for decades of daily use."
+        description="Choose durable epoxy garage floor coatings that are designed to resist hot tires, oil, road salt, moisture, and everyday wear for your homes and businesses across Surrey, BC."
         primaryAction={{ href: "/contact-us", label: "Get Free Quote" }}
         secondaryAction={{
           href: "#system",
@@ -232,12 +228,12 @@ export default function GarageFloorsPage() {
                 size="section"
                 tone="dark"
                 eyebrow="THE SYSTEM"
-                title={<>More Than Paint. <span className="text-[var(--brand-color)]">A Real Floor Build.</span></>}
+                title={<>More Than Paint: A Garage Floor <span className="text-[var(--brand-color)]">Built for Real Life</span></>}
                 description={
                   <>
-                  <p>Your garage is more than parking — it&apos;s cars, tools, seasonal traffic, and the first space guests see. Seven Shades garage epoxy transforms bare concrete into a seamless, high-performance surface with UV-stable clears and lasting chemical resistance.</p>
+                  <p>Your garage is the first space guests see. So it is more than parking. While it looks good, the garage floor should be easy to clean, comfortable to use, and durable enough for vehicles, tools, equipment, moisture, and daily traffic.</p>
 
-                  <p>Whether you want a mirror polish under a weekend car or a tough flake system that hides dust between cleanings, we diamond-grind the slab and install coatings built to last — not thin temporary coverings.</p>
+                  <p>Seven Shades provides a complete garage floor epoxy service in Surrey, from concrete preparation and repairs to coating application, finish selection, and care guidance.</p>
                   </>
                 }
               />
@@ -307,13 +303,13 @@ export default function GarageFloorsPage() {
               eyebrow="WHY GARAGE EPOXY"
               title={
                 <>
-                  Performance You Notice{" "}
+                  Built for Hot Tires, Spills, and {" "}
                   <span className="text-[var(--brand-color)]">
-                    Every Time You Park.
+                  Everyday Life
                   </span>
                 </>
               }
-              description="A garage isn’t just a parking spot — it’s your space for cars, tools, and family time. Hot-tire resistance, UV-stable clears, and a showroom sheen that holds up to everyday life."
+              description="A long-lasting garage floor depends on correct concrete preparation, suitable materials, careful installation, and proper curing."
               descriptionClassName="mx-auto max-w-2xl text-white/60"
             />
           </div>
@@ -404,10 +400,8 @@ export default function GarageFloorsPage() {
                 eyebrow="HOW WE INSTALL"
                 title={
                   <>
-                    From Bare Slab To{" "}
-                    <span className="text-[var(--brand-color)]">
-                      Finished Surface.
-                    </span>
+                    From Bare Concrete to a{" "}
+                    <span className="text-[var(--brand-color)]">Finished Garage Floor</span>
                   </>
                 }
                 description="Prep first. No shortcuts. Every coat earns the next one."
@@ -464,7 +458,7 @@ export default function GarageFloorsPage() {
               eyebrow="QUESTIONS"
               title={
                 <>
-                  Garage Floor{" "}
+                  Garage Floor Epoxy {" "}
                   <span className="text-[var(--brand-color)]">FAQs</span>
                 </>
               }
@@ -520,7 +514,11 @@ export default function GarageFloorsPage() {
         </div>
       </section>
 
-      <CallToAction />
+      <CallToAction
+        title={<>Ready To <span className="text-[var(--brand-color)]">Upgrade </span>Your Garage Floors?</>}
+        description="Get a free consultation and estimate from a Surrey epoxy garage floor expert."
+        primaryLabel="Get My Free Garage Floor Quote"
+      />
     </>
   );
 }

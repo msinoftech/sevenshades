@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
@@ -8,6 +9,24 @@ const CTA_PERKS = [
   "Quick Response",
   "Satisfaction Guaranteed",
 ];
+
+export type CallToActionProps = {
+  title?: ReactNode;
+  description?: ReactNode;
+  image?: string;
+  imageAlt?: string;
+  perks?: readonly string[];
+  primaryLabel?: string;
+  primaryHref?: string;
+  secondaryLabel?: string;
+  secondaryHref?: string;
+};
+
+const DEFAULT_TITLE = (
+  <>
+    Ready To <span className="text-[var(--brand-color)]">Upgrade</span> Your Floors?
+  </>
+);
 
 function CalendarIcon() {
   return (
@@ -66,15 +85,25 @@ function CheckIcon() {
   );
 }
 
-export default function CallToAction() {
+export default function CallToAction({
+  title = DEFAULT_TITLE,
+  description = "Get a free consultation and estimate today.",
+  image = "/images/services/service-metallic.webp",
+  imageAlt = "free quote epoxy floor installation",
+  perks = CTA_PERKS,
+  primaryLabel = "Get Free Quote",
+  primaryHref = "/contact-us",
+  secondaryLabel = "Schedule Consultation",
+  secondaryHref = "/contact-us",
+}: CallToActionProps = {}) {
   return (
     <section className="bg-gray-50 py-14 sm:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative isolate overflow-hidden rounded-[1.75rem] bg-[#050A14] sm:rounded-[2.25rem] lg:rounded-[2.75rem]">
           <div className="pointer-events-none absolute inset-y-0 right-0 w-full sm:w-[55%] lg:w-[48%]">
             <Image
-              src="/images/services/service-metallic.webp"
-              alt="free quote epoxy floor installation"
+              src={image}
+              alt={imageAlt}
               width={800}
               height={600}
               className="w-full h-full object-cover object-center opacity-80"
@@ -85,20 +114,16 @@ export default function CallToAction() {
           <div className="relative z-10 grid grid-cols-1 gap-8 px-6 py-10 sm:px-8 sm:py-12 lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-12 lg:py-14">
             {/* Left: headline + CTAs */}
             <div className="lg:col-span-7">
-              <h2 className=" text-[1.55rem] font-bold tracking-wide text-white sm:text-3xl lg:text-[2.15rem] lg:leading-[1.15]">
-                Ready To{" "}
-                <span className="text-[var(--brand-color)]">Upgrade</span> Your
-                Floors?
-              </h2>
-              <p className="text-white/70">Get a free consultation and estimate today.</p>
+              <h2 className=" text-[1.55rem] font-bold tracking-wide text-white sm:text-3xl lg:text-[2.15rem] lg:leading-[1.15]">{title}</h2>
+              <p className="text-white/70">{description}</p>
 
               <div className="mt-6 flex flex-wrap items-center gap-3 sm:gap-4">
-                <Button href="/contact-us" className="max-[450px]:w-full">Get Free Quote</Button>
+                <Button href={primaryHref} className="max-[450px]:w-full">{primaryLabel}</Button>
                 <Link
-                  href="/contact-us"
+                  href={secondaryHref}
                   className="group inline-flex items-center justify-center gap-0 rounded-xl border border-white/75 bg-transparent py-3 pr-6 pl-6 font-medium text-sm text-white transition-colors hover:border-white hover:bg-white/10 max-[450px]:w-full sm:justify-between sm:gap-2.5 sm:rounded-full sm:pr-1.5 sm:pl-7 sm:py-1.5"
                 >
-                  Schedule Consultation
+                  {secondaryLabel}
                   <CalendarIcon />
                 </Link>
               </div>
@@ -107,7 +132,7 @@ export default function CallToAction() {
             {/* Center checklist */}
             <div className="lg:col-span-5 lg:justify-self-end xl:pr-8">
               <ul className="flex flex-col gap-3.5 sm:gap-4">
-                {CTA_PERKS.map((perk) => (
+                {perks.map((perk) => (
                   <li key={perk} className="flex items-center gap-3 text-sm text-white sm:text-[0.95rem]">
                     <span className="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-[var(--brand-color)] text-white"><CheckIcon /></span>
                     {perk}

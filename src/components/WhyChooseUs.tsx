@@ -161,8 +161,8 @@ export default function WhyChooseUs() {
               eyebrow="WHY CHOOSE US"
               title={
                 <>
-                  Stronger. Safer. Better.{" "}
-                  <span className="text-[var(--brand-color)]">Forever.</span>
+                  Built to Perform.{" "}
+                  <span className="text-[var(--brand-color)]">Designed to Last.</span>
                 </>
               }
               description="Our epoxy floors deliver unmatched results and elevate every space."

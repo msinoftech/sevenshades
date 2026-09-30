@@ -60,8 +60,8 @@ export default function ContactUsPage() {
       {/* Form + details */}
       <section className="relative bg-[#F7F8FA] py-14 sm:py-16">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-12 xl:gap-16">
-            <div className="lg:col-span-5 xl:col-span-4 space-y-4">
+          <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2">
+            <div className="space-y-4">
               <Heading
                 tag="h2"
                 size="section"
@@ -132,7 +132,7 @@ export default function ContactUsPage() {
               </ul>
             </div>
 
-            <div className="lg:col-span-7 xl:col-span-8">
+            <div className="">
               <FlooringQuoteForm tone="light" className="lg:max-w-none" />
             </div>
           </div>

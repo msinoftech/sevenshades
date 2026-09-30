@@ -300,7 +300,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </section>
       ) : null}
 
-      <CallToAction />
+      <CallToAction
+        title={<>Ready To Start Your <span className="text-[var(--brand-color)]">Project</span>?</>}
+        description="Get a free consultation and estimate for the floor you have been reading about."
+        image="/images/services/service-metallic.webp"
+        imageAlt="Metallic epoxy floor finish by Seven Shades"
+      />
     </>
   );
 }

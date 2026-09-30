@@ -517,7 +517,10 @@ export default function MetallicEpoxyPage() {
         </div>
       </section>
 
-      <CallToAction />
+      <CallToAction
+        title={<>Ready For A <span className="text-[var(--brand-color)]">Metallic</span> Finish?</>}
+        description="Get a free quote for a distinctive metallic epoxy floor with seamless patterns and lasting durability."
+      />
     </>
   );
 }

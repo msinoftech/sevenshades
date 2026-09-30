@@ -516,7 +516,10 @@ export default function SolidEpoxyPage() {
         </div>
       </section>
 
-      <CallToAction />
+      <CallToAction
+        title={<>Ready For A <span className="text-[var(--brand-color)]">Solid</span> Color Floor?</>}
+        description="Get a free quote for a clean, seamless solid color epoxy finish built to last."
+      />
     </>
   );
 }

@@ -172,7 +172,10 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         </div>
       </section>
 
-      <CallToAction />
+      <CallToAction
+        title={<>Ready To <span className="text-[var(--brand-color)]">Upgrade</span> Your Floors?</>}
+        description="Put these ideas to work — get a free consultation and estimate today."
+      />
     </>
   );
 }
