@@ -21,13 +21,13 @@ export const counterItems: CounterItem[] = [
   {
     id: "sqft",
     value: "2M+",
-    label: "Sq Ft Installed",
+    label: "Sq. Ft. Delivered",
     icon: "sqft",
   },
   {
     id: "experience",
     value: "10+ Years",
-    label: "Years Experience",
+    label: "Industry Experience",
     icon: "experience",
   },
   {
