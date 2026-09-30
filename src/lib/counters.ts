@@ -14,7 +14,7 @@ export type CounterItem = {
 export const counterItems: CounterItem[] = [
   {
     id: "projects",
-    value: "25K+",
+    value: "1,000+",
     label: "Projects Completed",
     icon: "projects",
   },
@@ -26,13 +26,13 @@ export const counterItems: CounterItem[] = [
   },
   {
     id: "experience",
-    value: "10+",
+    value: "10+ Years",
     label: "Years Experience",
     icon: "experience",
   },
   {
     id: "clients",
-    value: "5K+",
+    value: "750+",
     label: "Happy Clients",
     icon: "clients",
   },

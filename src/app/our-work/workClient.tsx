@@ -375,7 +375,7 @@ export default function OurWorkClient() {
           icon: "arrow",
         }}
         aside={{
-          label: "Projects",
+          label: "Featured Projects",
           value: `${ourWorkItems.length}+`,
           description: "Featured installs matched to our flooring services.",
         }}
