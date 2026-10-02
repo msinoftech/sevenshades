@@ -6,6 +6,7 @@ import CallToAction from "@/components/CallToAction";
 import Heading from "@/components/Heading";
 import PageHeader from "@/components/PageHeader";
 import Pagination from "@/components/Pagination";
+import { connection } from "next/server";
 import { BASE_URL } from "@/lib/config";
 import { blogPosts } from "@/lib/blog";
 
@@ -52,8 +53,13 @@ type BlogPageProps = {
 
 export default async function BlogPage({ searchParams }: BlogPageProps) {
   const { page: pageParam } = await searchParams;
+  await connection();
 
-  const [featured, ...rest] = blogPosts;
+  const featuredIndex = blogPosts.length
+    ? Math.floor(Math.random() * blogPosts.length)
+    : 0;
+  const featured = blogPosts[featuredIndex];
+  const rest = blogPosts.filter((_, index) => index !== featuredIndex);
   const totalPages = Math.max(1, Math.ceil(rest.length / POSTS_PER_PAGE));
   const requestedPage = Number(pageParam);
   const currentPage = Number.isFinite(requestedPage)

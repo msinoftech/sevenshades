@@ -37,7 +37,7 @@ export default function OurWorkPage() {
         <WorkClient />
       </Suspense>
       <CallToAction
-        title={<>Like What You <span className="text-[var(--brand-color)]">See</span>?</>}
+        title={<>Like What You <span className="text-[var(--brand-color)]">See?</span></>}
         description="Get a free estimate for a finish like the projects above."
       />
     </>

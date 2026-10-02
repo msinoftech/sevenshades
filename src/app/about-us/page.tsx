@@ -511,7 +511,7 @@ export default function AboutUsPage() {
       </section>
 
       <CallToAction
-        title={<>Ready To Work With <span className="text-[var(--brand-color)]">Seven Shades</span>?</>}
+        title={<>Ready To Work With <span className="text-[var(--brand-color)]">Seven Shades?</span></>}
         description="Get a free consultation from epoxy specialists installing floors in Surrey since 2014."
       />
     </>

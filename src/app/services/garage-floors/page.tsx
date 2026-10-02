@@ -13,27 +13,27 @@ import { serviceFaqs } from "@/lib/service-faqs";
 import { BASE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Epoxy Garage Floors Surrey, BC | Seven Shades",
-  description: "Upgrade your garage with a seamless, durable epoxy garage floor built for daily use, easy cleaning, and lasting style. Get your free estimate in Surrey!",
-  keywords: ["garage epoxy flooring", "garage floor coating", "epoxy garage floor installation", "hot tire resistant epoxy", "residential garage floors"],
+  title: "Epoxy Garage Floor Contractor in Surrey, BC | Seven Shades",
+  description: "Seven Shades, a professional epoxy garage floor installer, offers you durable finish options in Surrey. Get free quotes for an easy-to-clean coating system.",
+  keywords: ["epoxy garage floor contractor In Surrey", "epoxy garage floor installers Surrey", "garage floor epoxy coating contractors Surrey", "garage floor epoxy service", "garage floor coating company", "concrete garage floor contractors", "garage floor coating contractor", "garage floor coating service", "epoxy garage floor expert", "garage floor epoxy finishing company", "garage floor painting contractors"],
   alternates: { 
     canonical: `${BASE_URL}/services/garage-floors` 
   },
   openGraph: {
-    title: "Epoxy Garage Floors Surrey, BC | Seven Shades",
-    description: "Upgrade your garage with a seamless, durable epoxy garage floor built for daily use, easy cleaning, and lasting style. Get your free estimate in Surrey!",
+    title: "Epoxy Garage Floor Contractor in Surrey, BC | Seven Shades",
+    description: "Seven Shades, a professional epoxy garage floor installer, offers you durable finish options in Surrey. Get free quotes for an easy-to-clean coating system.",
     type: "website",
     images: [
       {
         url: BASE_URL + "/images/services/service-garage.webp",
-        alt: "Epoxy Garage Floors Surrey, BC | Seven Shades",
+        alt: "garage floor epoxy finishing company",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Epoxy Garage Floors Surrey, BC | Seven Shades",
-    description: "Upgrade your garage with a seamless, durable epoxy garage floor built for daily use, easy cleaning, and lasting style. Get your free estimate in Surrey!",
+    title: "Epoxy Garage Floor Contractor in Surrey, BC | Seven Shades",
+    description: "Seven Shades, a professional epoxy garage floor installer, offers you durable finish options in Surrey. Get free quotes for an easy-to-clean coating system.",
     images: [BASE_URL + "/images/services/service-garage.webp"],
   },
 };
@@ -97,18 +97,21 @@ const finishes = [
     name: "Solid Color",
     detail: "Clean, continuous color with a high-gloss or satin clear.",
     image: "/images/services/service-commercial.webp",
+    imageAlt: "garage floor epoxy coating contractors Surrey",
   },
   {
     id: "flake",
     name: "Full Flake",
     detail: "Multi-tone broadcast for grip, style, and everyday forgiveness.",
     image: "/images/services/service-garage.webp",
+    imageAlt: "garage floor epoxy service",
   },
   {
     id: "blend",
     name: "Blend System",
     detail: "Blend system for collector bays that deserve a feature floor.",
     image: "/images/services/garage.webp",
+    imageAlt: "garage floor coating company",
   },
 ];
 
@@ -257,7 +260,7 @@ export default function GarageFloorsPage() {
               <div className="relative aspect-[5/4] overflow-hidden rounded-[1.75rem] sm:rounded-[2.1rem]">
                 <Image
                   src="/images/services/garage-1.webp"
-                  alt="Finished garage epoxy floor with luxury vehicle"
+                  alt="epoxy garage floor contractor In Surrey"
                   width={800}
                   height={800}
                   className="w-full h-full object-cover"
@@ -269,7 +272,7 @@ export default function GarageFloorsPage() {
                 <div className="relative aspect-[4/3]">
                   <Image
                     src="/images/services/service-garage.webp"
-                    alt="Wide residential epoxy flooring detail"
+                    alt="epoxy garage floor installers Surrey"
                     width={400}
                     height={400}
                     className="w-full h-full object-cover"
@@ -371,7 +374,7 @@ export default function GarageFloorsPage() {
               <li key={finish.id}>
                 <OverlayCard
                   image={finish.image}
-                  imageAlt={finish.name}
+                  imageAlt={finish.imageAlt}
                   title={finish.name}
                   description={finish.detail}
                   alwaysVisible

@@ -21,8 +21,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "blends",
     image: "/images/flakes/swatches/basalt-stone.jpg",
     tone: "Cool",
-    description:
-      "Cool grey blend with silver and slate chips — clean, modern, and ideal for garages with lighter vehicles.",
+    description: "Cool grey blend with silver and slate chips — clean, modern, and ideal for garages with lighter vehicles.",
   },
   {
     id: "shoreline",
@@ -30,8 +29,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "blends",
     image: "/images/flakes/swatches/shoreline.jpg",
     tone: "Warm",
-    description:
-      "Warm sandy tones with beige, tan, and cream flakes — a soft coastal look for bright, welcoming garages.",
+    description: "Warm sandy tones with beige, tan, and cream flakes — a soft coastal look for bright, welcoming garages.",
   },
   {
     id: "creekbed",
@@ -39,8 +37,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "blends",
     image: "/images/flakes/swatches/creekbed.jpg",
     tone: "Warm",
-    description:
-      "Earthy mix of tan, brown, grey, and white chips — natural character that pairs well with transitional homes.",
+    description: "Earthy mix of tan, brown, grey, and white chips — natural character that pairs well with transitional homes.",
   },
   {
     id: "gunflint-trail",
@@ -48,8 +45,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "blends",
     image: "/images/flakes/swatches/gunflint-trail.jpg",
     tone: "Dark",
-    description:
-      "Charcoal, grey, and warm tan accents — rugged depth that hides everyday dust and scuffs.",
+    description: "Charcoal, grey, and warm tan accents — rugged depth that hides everyday dust and scuffs.",
   },
   {
     id: "nightfall",
@@ -57,8 +53,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "blends",
     image: "/images/flakes/swatches/nightfall.jpg",
     tone: "Dark",
-    description:
-      "Deep charcoal and black flake blend — dramatic under garage lighting for luxury or collector bays.",
+    description: "Deep charcoal and black flake blend — dramatic under garage lighting for luxury or collector bays.",
   },
   {
     id: "domino",
@@ -66,8 +61,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "blends",
     image: "/images/flakes/swatches/domino.jpg",
     tone: "Neutral",
-    description:
-      "High-contrast black, white, and grey chips — bold salt-and-pepper look that reads crisp and intentional.",
+    description: "High-contrast black, white, and grey chips — bold salt-and-pepper look that reads crisp and intentional.",
   },
   {
     id: "cabin-fever",
@@ -75,8 +69,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "blends",
     image: "/images/flakes/swatches/cabin-fever.jpg",
     tone: "Neutral",
-    description:
-      "Balanced grey mix with black flecks — a versatile neutral that works with most home exteriors.",
+    description: "Balanced grey mix with black flecks — a versatile neutral that works with most home exteriors.",
   },
   {
     id: "gravel",
@@ -84,8 +77,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "blends",
     image: "/images/flakes/swatches/gravel.jpg",
     tone: "Neutral",
-    description:
-      "Light grey and white stone-like chips — opens the garage visually and reflects natural light.",
+    description: "Light grey and white stone-like chips — opens the garage visually and reflects natural light.",
   },
   {
     id: "raven",
@@ -93,8 +85,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "solids",
     image: "/images/flakes/swatches/raven.jpg",
     tone: "Dark",
-    description:
-      "Predominantly black with white and grey accents — high-contrast drama for show garages.",
+    description: "Predominantly black with white and grey accents — high-contrast drama for show garages.",
   },
   {
     id: "wombat",
@@ -102,8 +93,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "solids",
     image: "/images/flakes/swatches/wombat.jpg",
     tone: "Neutral",
-    description:
-      "Balanced greyscale mix of grey, black, and white — a timeless floor that hides wear between cleanings.",
+    description: "Balanced greyscale mix of grey, black, and white — a timeless floor that hides wear between cleanings.",
   },
   {
     id: "tidal-wave",
@@ -111,8 +101,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "solids",
     image: "/images/flakes/swatches/tidal-wave.jpg",
     tone: "Cool",
-    description:
-      "Cool blue, grey, and white chips — distinctive coastal character with a polished finish.",
+    description: "Cool blue, grey, and white chips — distinctive coastal character with a polished finish.",
   },
   {
     id: "quicksilver",
@@ -120,8 +109,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "solids",
     image: "/images/flakes/swatches/quicksilver.jpg",
     tone: "Neutral",
-    description:
-      "Bright white and light grey with black specks — maximizes light reflection for smaller garages.",
+    description: "Bright white and light grey with black specks — maximizes light reflection for smaller garages.",
   },
   {
     id: "bean-sable",
@@ -129,8 +117,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "solids",
     image: "/images/flakes/swatches/bean-sable.jpg",
     tone: "Warm",
-    description:
-      "Warm tan, beige, brown, and black blend — earthy warmth for mudrooms and warm-toned homes.",
+    description: "Warm tan, beige, brown, and black blend — earthy warmth for mudrooms and warm-toned homes.",
   },
   {
     id: "stonehenge",
@@ -138,8 +125,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "solids",
     image: "/images/flakes/swatches/stonehenge.jpg",
     tone: "Neutral",
-    description:
-      "Natural stone-grey tones with white highlights — refined, monolithic look with subtle texture.",
+    description: "Natural stone-grey tones with white highlights — refined, monolithic look with subtle texture.",
   },
   {
     id: "orbit",
@@ -147,8 +133,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "solids",
     image: "/images/flakes/swatches/orbit.jpg",
     tone: "Cool",
-    description:
-      "Vibrant royal and bright blue with black and white — bold personality for show-ready workshops.",
+    description: "Vibrant royal and bright blue with black and white — bold personality for show-ready workshops.",
   },
   {
     id: "outback",
@@ -156,8 +141,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "solids",
     image: "/images/flakes/swatches/outback.jpg",
     tone: "Warm",
-    description:
-      "Rustic tan, brown, black, and white mix — rugged warmth inspired by natural earth tones.",
+    description: "Rustic tan, brown, black, and white mix — rugged warmth inspired by natural earth tones.",
   },
   {
     id: "madras",
@@ -165,8 +149,7 @@ export const garageFlakeOptions: GarageFlakeOption[] = [
     collection: "solids",
     image: "/images/flakes/swatches/madras.jpg",
     tone: "Warm",
-    description:
-      "Muted tan, taupe, and light grey — understated sandy blend for a calm, cohesive garage aesthetic.",
+    description: "Muted tan, taupe, and light grey — understated sandy blend for a calm, cohesive garage aesthetic.",
   },
 ];
 
