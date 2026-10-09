@@ -12,27 +12,27 @@ import { serviceFaqs } from "@/lib/service-faqs";
 import { BASE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Commercial Epoxy Flooring Surrey, BC | Seven Shades",
-  description: "Durable commercial epoxy floors for shops, warehouses, and workspaces in Surrey, BC. Built for heavy traffic and easier maintenance. Request a quote!",
-  keywords: ["commercial epoxy flooring", "retail epoxy floor coating", "commercial floor installation", "high traffic epoxy flooring", "business epoxy floors"],
+  title: "Commercial Epoxy Floor Coating Contractor In Surrey | Seven Shades",
+  description: "Schedule commercial epoxy floor coating installation around facility operations with Seven Shades. Get a Free Quote.",
+  keywords: ["commercial floor coating contractor surrey", "industrial epoxy floor coating contractor surrey", "Warehouse floor epoxy expert in Surrey"],
   alternates: { 
     canonical: `${BASE_URL}/services/commercial`,
   },
   openGraph: {
-    title: "Commercial Epoxy Flooring Surrey, BC | Seven Shades",
-    description: "Durable commercial epoxy floors for shops, warehouses, and workspaces in Surrey, BC. Built for heavy traffic and easier maintenance. Request a quote!",
+    title: "Commercial Epoxy Floor Coating Contractor In Surrey | Seven Shades",
+    description: "Schedule commercial epoxy floor coating installation around facility operations with Seven Shades. Get a Free Quote.",
     type: "website",
     images: [
       {
         url: BASE_URL + "/images/services/service-commercial.webp",
-        alt: "Commercial Epoxy Flooring Surrey, BC | Seven Shades",
+        alt: "commercial floor coating contractor surrey",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Commercial Epoxy Flooring Surrey, BC | Seven Shades",
-    description: "Durable commercial epoxy floors for shops, warehouses, and workspaces in Surrey, BC. Built for heavy traffic and easier maintenance. Request a quote!",
+    title: "Commercial Epoxy Floor Coating Contractor In Surrey | Seven Shades",
+    description: "Schedule commercial epoxy floor coating installation around facility operations with Seven Shades. Get a Free Quote.",
     images: [BASE_URL + "/images/services/service-commercial.webp"],
   },
 };
@@ -47,23 +47,19 @@ const specs = [
 const benefits = [
   {
     title: "Built for constant foot traffic",
-    description:
-      "Dense, abrasion-resistant systems that hold up to customers, carts, chairs, and daily open hours — without looking tired mid-season.",
+    description: "Dense, abrasion-resistant systems that withstand customers, carts, chairs, and daily open hours—without looking tired mid-season.",
   },
   {
     title: "Fast, sanitary cleaning",
-    description:
-      "A seamless non-porous surface that resists spills and stains. Ideal for retail floors, cafés, waiting rooms, and shared commercial spaces.",
+    description: "A seamless non-porous surface that resists spills and stains. Ideal for retail floors, cafés, waiting rooms, and shared commercial spaces.",
   },
   {
-    title: "Safer footing under pressure",
-    description:
-      "Optional texture packages for wet entries, kitchens-adjacent zones, and areas where slip resistance matters as much as appearance.",
+    title: "Slip resistance under pressure",
+    description: "Smooth floors are not suitable for wet entries and areas adjacent to kitchens. Textured packages can be a good option, providing slip resistance while maintaining a polished look.",
   },
   {
     title: "Brand-ready color & finish",
-    description:
-      "Solid colors, flake blends, and quartz systems tuned to your brand — consistent, professional, and easy to maintain across locations.",
+    description: "Solid colors, flake blends, and quartz systems tuned to your brand — consistent, professional, and easy to maintain across locations.",
   },
 ];
 
@@ -71,40 +67,36 @@ const process = [
   {
     step: "01",
     title: "Site survey & schedule",
-    description:
-      "We review use patterns, hours of operation, and moisture so install windows fit your business — not the other way around.",
+    description: "We review use patterns, hours of operation, and moisture so install windows to your business.",
   },
   {
     step: "02",
     title: "Prep & profile",
-    description:
-      "Diamond grinding, crack repair, and contamination removal create a mechanical bond strong enough for daily commercial wear.",
+    description: "Prepare the slab mechanically with diamond grinding, repair cracks, and remove surface defects to create a strong profile for the coating system to bond mechanically to the concrete.",
   },
   {
     step: "03",
-    title: "System install",
-    description:
-      "Primer, build coats, and finish systems applied in controlled stages — solid, flake, or quartz — matched to traffic and cleaning needs.",
+    title: "Installation",
+    description: "Primer, build coats, decorative material, and a protective finish coat can be included for any specified floor.",
   },
   {
     step: "04",
-    title: "Handoff & care plan",
-    description:
-      "Clear reopen timing plus practical maintenance guidance so staff can keep the floor looking intentional between deep cleans.",
+    title: "Cure, handover & care plan",
+    description: "Clear reopening timing plus practical maintenance guidance.",
   },
 ];
 
 const finishes = [
   {
     id: "solid",
-    name: "Solid Color",
+    name: "Solid Color Systems",
     detail: "Clean, continuous color that reads polished and professional in offices and showrooms.",
     image: "/images/services/service-commercial.webp",
   },
   {
     id: "flake",
-    name: "Full Flake",
-    detail: "Multi-tone broadcast for grip, camouflage of everyday wear, and high-traffic resilience.",
+    name: "Full Flake Systems",
+    detail: "Works well in busy commercial areas where slip resistance, everyday wear protection, and high-traffic resilience matter.",
     image: "/images/services/service-garage.webp",
   },
   {
@@ -166,14 +158,14 @@ export default function CommercialPage() {
     <>
 
       <PageHeader
-        eyebrow="COMMERCIAL EPOXY SYSTEMS"
+        eyebrow="COMMERCIAL COATING SYSTEMS"
         title={
           <>
-            Floors Built For{" "}
+            Epoxy Flooring Built for{" "}
             <span className="text-[var(--brand-color)]">Business.</span>
           </>
         }
-        description="High-performance epoxy for retail, offices, restaurants, and showrooms — tough enough for daily traffic, polished enough for your brand."
+        description="High-performance epoxy for retail, offices, restaurants, and showrooms — tough enough for daily traffic, polished enough for your space."
         primaryAction={{ href: "/contact-us", label: "Get Free Quote" }}
         secondaryAction={{
           href: "#system",
@@ -232,12 +224,14 @@ export default function CommercialPage() {
                 size="section"
                 tone="dark"
                 eyebrow="THE SYSTEM"
-                title={<>More Than Paint. <span className="text-[var(--brand-color)]">A Real Floor Build.</span></>}
+                title={<>A Floor System for the Way <span className="text-[var(--brand-color)]">Your Facility Operates</span></>}
                 description={
                   <>
-                  <p>Your commercial floor works every open hour — welcoming customers, taking carts and chair traffic, and facing daily cleaning. Seven Shades commercial epoxy turns ordinary concrete into a seamless, high-performance surface that looks intentional and stays maintainable.</p>
+                  <p>Your commercial floor works every open hour—welcoming customers, handling carts and chair traffic, and facing daily cleaning.</p>
 
-                  <p>From retail sales floors to office lobbies and hospitality spaces, we diamond-grind the slab and install systems chosen for abrasion, sanitation, and lasting appearance — not thin temporary coatings.</p>
+                  <p>We turn concrete into a seamless, high-performance surface with the right commercial epoxy coating.</p>
+
+                  <p>That may mean a clean solid-color finish for a showroom, a flake system for a busy customer-facing space, or a more textured system for demanding service and work areas. Process, preparation, and coating build the lasting appearance. So consider comparing commercial floor coating contractors for your space, whether it's:</p>
                   </>
                 }
               />
@@ -304,13 +298,13 @@ export default function CommercialPage() {
               eyebrow="WHY COMMERCIAL EPOXY"
               title={
                 <>
-                  Performance You Notice{" "}
+                  Performance You Notice {" "}
                   <span className="text-[var(--brand-color)]">
                     Every Open Hour.
                   </span>
                 </>
               }
-              description="A commercial floor isn’t backdrop — it’s part of the customer experience. Abrasion resistance, easy sanitation, and a finish that stays sharp through daily traffic."
+              description="A commercial floor isn't a backdrop — it's part of the customer experience. Epoxy coating brings abrasion resistance, easy sanitation, and a finish that stays sharp through daily traffic."
               descriptionClassName="mx-auto max-w-2xl text-white/60"
             />
           </div>
@@ -361,8 +355,8 @@ export default function CommercialPage() {
                 size="section"
                 tone="dark"
                 eyebrow="FINISH LIBRARY"
-                title={<>Choose How Your Space <span className="text-[var(--brand-color)]">Shows Up.</span></>}
-                description="Matched to traffic patterns, cleaning routines, and how your brand should feel underfoot."
+                title={<>Choose How Your Space Shows Up<span className="text-[var(--brand-color)]"> With the Right Coating System</span></>}
+                description="The best commercial epoxy floor is the one that fits your business requirements and personal preferences. It can be:"
               />
               </div>
           </div>
@@ -401,13 +395,13 @@ export default function CommercialPage() {
                 eyebrow="HOW WE INSTALL"
                 title={
                   <>
-                    From Bare Slab To{" "}
+                    What Goes Into a {" "}
                     <span className="text-[var(--brand-color)]">
-                      Business-Ready.
+                    Commercial Installation
                     </span>
                   </>
                 }
-                description="Prep first. Schedule around your hours. Every coat earns the next one."
+                description="Concrete preparation strongly influences the finished installation. This affects the coating system."
                 descriptionClassName="max-w-md"
               />
 
@@ -461,7 +455,7 @@ export default function CommercialPage() {
               eyebrow="QUESTIONS"
               title={
                 <>
-                  Commercial Floor{" "}
+                  Commercial Epoxy Flooring {" "}
                   <span className="text-[var(--brand-color)]">FAQs</span>
                 </>
               }
@@ -518,8 +512,8 @@ export default function CommercialPage() {
       </section>
 
       <CallToAction
-        title={<>Ready For A <span className="text-[var(--brand-color)]">Commercial</span> Floor?</>}
-        description="Get a free quote for durable epoxy built for shops, warehouses, and heavy daily traffic."
+        title={<>Ready To Upgrade <span className="text-[var(--brand-color)]">Your Floors?</span></>}
+        description="Get a free quote from an industrial epoxy floor coating expert for shops, warehouses, and high-traffic areas."
       />
     </>
   );

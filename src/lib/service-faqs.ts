@@ -25,24 +25,22 @@ export const serviceFaqs: Record<string, ServiceFaq[]> = {
   "commercial": [
     {
       question: "How long does commercial epoxy flooring last?",
-      answer:
-        "A properly prepped Seven Shades commercial system is designed for years of daily foot traffic. Lifespan depends on prep quality, traffic volume, cleaning chemicals, and the finish system specified for the space.",
+      answer: 'A properly prepped Seven Shades commercial system is designed for years of daily foot traffic. Can you install without fully shutting down my business? — Often yes. We plan phased installs and off-hour work whenever possible. Will the floor hold up to carts, chairs, and cleaning chemicals? — Commercial systems are selected for abrasion and chemical resistance.',
     },
     {
-      question: "Can you install without fully shutting down my business?",
-      answer:
-        "Often yes. We plan phased installs and off-hour work whenever possible. Exact sequencing depends on square footage, access, and cure windows — we’ll map a schedule around your operations.",
+      question: "Solid, flake, or quartz — which is best? ",
+      answer: "Solid fits polished offices and showrooms; flake adds grip; quartz suits demanding service zones.",
     },
-    {
-      question: "Will the floor hold up to carts, chairs, and cleaning chemicals?",
-      answer:
-        "Commercial systems are selected for abrasion and chemical resistance. We’ll recommend solid, flake, or quartz based on how the space is used and how aggressively it is cleaned.",
-    },
-    {
-      question: "Solid, flake, or quartz — which is best for commercial spaces?",
-      answer:
-        "Solid fits polished offices and showrooms. Flake adds grip and hides micro-wear in high-traffic retail. Quartz suits corridors and service zones that need maximum toughness. We’ll match the system to your use case.",
-    },
+    // {
+    //   question: "Will the floor hold up to carts, chairs, and cleaning chemicals?",
+    //   answer:
+    //     "Commercial systems are selected for abrasion and chemical resistance. We’ll recommend solid, flake, or quartz based on how the space is used and how aggressively it is cleaned.",
+    // },
+    // {
+    //   question: "Solid, flake, or quartz — which is best for commercial spaces?",
+    //   answer:
+    //     "Solid fits polished offices and showrooms. Flake adds grip and hides micro-wear in high-traffic retail. Quartz suits corridors and service zones that need maximum toughness. We’ll match the system to your use case.",
+    // },
   ],
   "residential": [
     {

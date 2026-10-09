@@ -135,6 +135,7 @@ function breadcrumbList(items: Breadcrumb[]) {
     "@type": "BreadcrumbList",
     "itemListElement": items.map((item, index) => ({
       "@type": "ListItem",
+      "@id": absoluteUrl(item.path),
       "position": index + 1,
       "name": item.name,
       "item": absoluteUrl(item.path),
@@ -207,34 +208,41 @@ const homeSchema = createPageGraph({
   ],
 });
 
-const serviceSeo: Record<string, { title: string; description: string }> = {
+const serviceSeo: Record<string, { title: string; description: string; serviceType: string }> = {
   "garage-floors": {
     title: "Epoxy Garage Floors Surrey, BC | Seven Shades",
-    description: "Upgrade your garage with a seamless, durable epoxy garage floor built for daily use, easy cleaning, and lasting style. Get your free estimate in Surrey!",
+    description: "Durable epoxy garage flooring designed for vehicle traffic, easy cleaning, and long-term concrete protection.",
+    serviceType: "Garage Floor Epoxy Coating",
   },
-  commercial: {
-    title: "Commercial Epoxy Flooring Surrey, BC | Seven Shades",
-    description: "Durable commercial epoxy floors for shops, warehouses, and workspaces in Surrey, BC. Built for heavy traffic and easier maintenance. Request a quote!",
+  "commercial": {
+    title: "Commercial Epoxy Floor Coating Contractor In Surrey | Seven Shades",
+    description: "High-performance epoxy flooring designed for commercial traffic, durability, sanitation, and easy maintenance.",
+    serviceType: "Commercial Epoxy Flooring",
   },
-  residential: {
+  "residential": {
     title: "Residential Epoxy Flooring Surrey, BC | Seven Shades",
-    description: "Give basements and interior concrete floors a seamless, durable finish with residential epoxy flooring in Surrey, BC. Book your free estimate today!",
+    description: "Seamless epoxy flooring for garages, basements and other residential concrete surfaces.",
+    serviceType: "Residential Epoxy Flooring",
   },
   "metallic-epoxy": {
     title: "Metallic Epoxy Floors Surrey, BC | Seven Shades",
-    description: "Create a distinctive floor with metallic epoxy finishes featuring seamless patterns and lasting durability. Available across Surrey, BC. Get a free quote!",
+    description: "Decorative metallic epoxy flooring with custom colour movement, visual depth, and a distinctive premium finish.",
+    serviceType: "Metallic Epoxy Flooring",
   },
   "solid-epoxy": {
     title: "Solid Color Epoxy Floors Surrey, BC | Seven Shades",
-    description: "Choose clean, seamless solid color epoxy floors for garages, homes, and commercial spaces in Surrey, BC. Durable finishes made to last. Request a quote!",
+    description: "Seamless solid-colour epoxy flooring designed for durability, clean appearance, and everyday use.",
+    serviceType: "Solid Color Epoxy Flooring",
   },
   "stone-epoxy": {
     title: "Stone Epoxy Flooring Surrey, BC | Seven Shades",
-    description: "Add texture and character with durable stone epoxy flooring for garages, patios, and concrete spaces in Surrey, BC. Explore finishes and get a free quote!",
+    description: "Decorative stone-look epoxy flooring combining natural aggregate character with durable surface protection.",
+    serviceType: "Stone Epoxy Flooring",
   },
   "rubber-surfacing": {
     title: "Rubber Surfacing Surrey, BC | Seven Shades",
-    description: "Discover durable rubber surfacing for indoor and outdoor spaces in Surrey, BC, designed for comfort, function, and lasting performance. Get a free quote!",
+    description: "Resilient rubber surfacing providing grip, comfort, impact absorption, and durability for active spaces.",
+    serviceType: "Rubber Surfacing Installation",
   },
 };
 
@@ -245,9 +253,10 @@ const staticPages: Record<string, PageSchemaConfig> = {
     "name": "About Seven Shades | Epoxy Flooring Specialists Since 2014",
     "description": "Meet Seven Shades — epoxy-only flooring specialists in Surrey, BC since 2014. Precision prep, premium materials, and lasting residential and commercial floors.",
     "image": "/images/about-us.webp",
-    "mainEntityId": `${BASE_URL}/about-us#about`,
+    "mainEntityId": `${BASE_URL}/about-us/#about`,
     "breadcrumbs": [
       ...homeCrumbs,
+      
       { 
         "name": "About Us", 
         "path": "/about-us" 
@@ -287,10 +296,11 @@ const staticPages: Record<string, PageSchemaConfig> = {
     "name": "Premium Epoxy Floor Coating Services Surrey | Seven Shades",
     "description": "Find professional epoxy floor coating and installation services in Surrey, BC, with solutions for garages, homes, and commercial spaces. Request a quote!",
     "image": "/images/services/service-garage.webp",
-    "mainEntityId": `${BASE_URL}/services#service-list`,
+    "mainEntityId": `${BASE_URL}/services/#service-list`,
     "breadcrumbs": [
       ...homeCrumbs,
       { 
+        
         "name": "Services", 
         "path": "/services" 
       },
@@ -316,7 +326,7 @@ const staticPages: Record<string, PageSchemaConfig> = {
     "name": "Blog | Seven Shades Epoxy Flooring Insights",
     "description": "Epoxy flooring tips, comparisons, and maintenance guides from Seven Shades — helping you choose, install, and care for garage, residential, and commercial floors.",
     "image": "/images/services/garage-1.webp",
-    "mainEntityId": `${BASE_URL}/blog#post-list`,
+    "mainEntityId": `${BASE_URL}/blog/#post-list`,
     "breadcrumbs": [
       ...homeCrumbs,
       { 
@@ -352,6 +362,7 @@ function createServicePageSchema(serviceId: string) {
   const description = seo?.description ?? service.description;
   const url = absoluteUrl(service.href);
   const faqs = serviceFaqs[service.id] ?? [];
+  const serviceType = seo?.serviceType ?? "Service";
 
   return createPageGraph({
     "path": service.href,
@@ -363,11 +374,11 @@ function createServicePageSchema(serviceId: string) {
       { "name": "Services", "path": "/services" },
       { "name": service.title, "path": service.href },
     ],
-    "mainEntityId": `${url}#service`,
+    "mainEntityId": `${url}/#service`,
     "extraNodes": [
       {
-        "@type": "Service",
-        "@id": `${url}#service`,
+        "@type": serviceType,
+        "@id": `${url}/#service`,
         "name": service.title,
         "description": description,
         "url": url,
@@ -377,13 +388,13 @@ function createServicePageSchema(serviceId: string) {
           "@type": "City",
           "name": "Surrey",
         },
-        "serviceType": service.title,
+        "serviceType": serviceType,
       },
       ...(faqs.length
         ? [
             {
               "@type": "FAQPage",
-              "@id": `${url}#faq`,
+              "@id": `${url}/#faq`,
               "url": url,
               "mainEntity": faqs.map((faq) => ({
                 "@type": "Question",
@@ -418,7 +429,7 @@ function createBlogPostSchema(slug: string) {
       { "name": "Blog", "path": "/blog" },
       { "name": post.title, "path": path },
     ],
-    "mainEntityId": `${url}#post`,
+    "mainEntityId": `${url}/#post`,
     "extraNodes": [
       {
         "@type": "BlogPosting",
