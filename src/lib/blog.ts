@@ -493,6 +493,285 @@ export const blogPosts: BlogPost[] = [
     ],
     faqs: [],
   },
+  {
+    id: 5,
+    slug: "garage-floor-maintenance-guide",
+    title: "How to Clean an Epoxy Garage Floor: A Simple Maintenance Guide",
+    excerpt: "This guide explains how to clean and maintain your epoxy garage floor to keep it cleaner, brighter, and welcoming for years.",
+    category: "",
+    date: "Oct 19, 2026",
+    publishedAt: "2026-10-19",
+    author: "Sevenshadesepoxy",
+    authorRole: "Flooring Specialists",
+    image: "/images/garage-floor-maintenance-guide.webp",
+    imageAlt: "An Epoxy Garage Floor Maintenance Guide for Long-Lasting",
+    metaDescription: "This guide explains how to clean and maintain your epoxy garage floor to keep it cleaner, brighter, and welcoming for years.",
+    metaTitle: "An Epoxy Garage Floor Maintenance Guide for Long-Lasting",
+    content: 
+    `
+    <p>An epoxy garage floor can make your garage look cleaner, brighter, and more welcoming. But even a strong floor coating needs a little care to stay in good shape.</p>
+    <p>First, understand what your garage floor deals with each day. Dirt from car tires, mud from shoes, and small oil-drip marks are common. Rainy weather also means wet tires, puddles, and road grime.</p>
+    <p>So maintaining a garage floor can be tougher than maintaining a <a href="${BASE_URL}/blog/tips-to-maintain-an-epoxy-floor-so-it-lasts">normal epoxy floor.</a></p>
+    <p>The good news? Cleaning an epoxy garage floor is easier than cleaning bare concrete. You don't need expensive equipment or hours of scrubbing.</p>
+    <p><a href="${BASE_URL}/blog/coating-system-for-your-garage-floor">Choosing the right garage floor coating system</a> is not enough on its own to last long. Routine maintenance matters too.</p>
+    <p>This guide is about how to clean your epoxy garage floor and maintain its shine for years.</p>
+
+    <h2>How to Clean an Epoxy Garage Floor Yourself: Step by Step</h2>
+    <p>Wondering how to clean an epoxy garage floor without hiring someone?</p>
+    <p>Do as most garages do. You need a few basic tools and the right cleaning method.</p>
+
+    <h3>What You'll Need</h3>
+    <ul>
+    <li>Soft-bristled broom or dust mop</li>
+    <li>One warm water bucket</li>
+    <li>An approved pH-neutral floor cleaner</li>
+    <li>Microfibre mop or soft cloth</li>
+    <li>Soft nylon brush for stubborn spots</li>
+    <li>Squeegee or clean towels</li>
+    </ul>
+
+    <h3>Step 1: Clear the Garage Floor</h3>
+    <p>Move small items, boxes, mats, and anything else sitting on the floor.</p>
+    <p>You don't have to empty the entire garage for a quick clean. Just make enough space to reach the areas that collect the most dirt.</p>
+    <p>Pay special attention to the spots where you park your car.</p>
+
+    <h3>Step 2: Sweep Away Dust and Loose Dirt</h3>
+    <p>Before adding water, sweep the floor with a soft-bristle broom.</p>
+    <p>Remove sand, tiny stones, leaves, and other debris. These small particles can scratch the coating when you drag them across the surface.</p>
+    <p>Quick tip: If you use a shop vacuum, choose a floor attachment that won't scratch the finish.</p>
+
+    <h3>Step 3: Prepare a Mild Cleaning Solution</h3>
+    <p>Mix a pH-neutral floor cleaner with warm water in a bucket, as an <a href="${BASE_URL}/services/garage-floors">epoxy garage floor contractor</a> suggested.</p>
+    <p>Avoid adding extra cleaner. More soap doesn't always mean a cleaner floor. Too much can leave a sticky or cloudy film.</p>
+    <p>If you're unsure which product to use, check your garage floor installer's care instructions.</p>
+
+    <h3>Step 4: Mop the Floor Gently</h3>
+    <p>First, dip the mop into the cleaning solution, then wring out the excess water.</p>
+    <p>A common approach is to start at the back of the garage and work toward the door.</p>
+    <p>For dirty spots, let the cleaner work for the time listed on its label. Then gently scrub with a soft nylon brush.</p>
+    <p>There's no need to scrub hard.</p>
+
+    <h3>Step 5: Rinse and Remove Dirty Water</h3>
+    <p>Use clean water to rinse the floor if the cleaner's directions require it.</p>
+    <p>Remove the dirty water with a squeegee, wet vacuum, or clean mop. Don't let dirty cleaning solution dry back onto the surface.</p>
+    <p>If your garage has no suitable drain, collect the water rather than pushing it into the street or a storm drain.</p>
+
+    <h3>Step 6: Let the Floor Dry</h3>
+    <p>Allow the floor to dry before moving items back or parking your vehicle.</p>
+    <p>Open the garage door for airflow when weather permits.</p>
+    <p>That's it! A little sweeping, gentle mopping, and proper drying can keep an epoxy garage floor looking fresh.</p>
+
+    <h2>What Is the Best Cleaner for an Epoxy Garage Floor?</h2>
+    <p>Both the cleaner and how often you clean matter. However, just warm water may be enough for light dust and mud. Otherwise, a pH-neutral floor cleaner approved for epoxy or the installed topcoat works well for everyday dirt.</p>
+    <p>Some coatings can also be cleaned with a small amount of mild dish soap. However, too much soap can leave a film if you don't rinse well.</p>
+    <p>If your floor has a polyaspartic or polyurethane topcoat, follow the care instructions for that finish. Not all garage coatings have the same chemical resistance.</p>
+
+    <h3>What Should You Avoid Using on Epoxy Floors?</h3>
+    <p>To protect the surface, avoid using the following products unless your coating manufacturer specifically approves them:</p>
+
+    <ul>
+    <li>Vinegar and acidic cleaners: Repeated use may dull some finishes.</li>
+    <li>Strong bleach or harsh chemical cleaners: These may affect the coating's colour or appearance.</li>
+    <li>Steel wool and stiff wire brushes: They can leave scratches.</li>
+    <li>Abrasive cleaning powders: These can wear down the glossy surface.</li>
+    <li>Strong solvents: Products such as paint thinner and acetone may damage certain coatings.</li>
+    <li>Wax or oily polish: These can leave residue and make the floor slippery.</li>
+    </ul>
+    <p>Always test a new cleaner in a small, hidden area before using it across the floor.</p>
+
+    <h2>How to Remove Common Stains From an Epoxy Garage Floor</h2>
+    <p>Even a well-maintained garage floor can get stained. From oil drips to black tire marks, each problem needs a slightly different cleaning method.</p>
+    <p>Here's how to tackle the most common ones.</p>
+    
+    <h3>1. How to Remove Oil and Grease Stains</h3>
+    <p>Oil spills are common in garages, especially if you park an older vehicle or work on your car at home.</p>
+    <p>The best approach is to clean the spill as soon as you notice it.</p>
+    <p>What to do:</p>
+    <ul>
+    <li>An absorbent cloth or paper towel is best.</li>
+    <li>Apply a mild degreaser as directed.</li>
+    <li>Let it sit for a time.</li>
+    <li>Gently scrub (a soft nylon brush can be used)</li>
+    <li>Wipe up the cleaner, rinse if directed, and dry the area.</li>
+    </ul>
+    <p>Avoid spreading the oil across the floor while cleaning.</p>
+    <p>For large fuel, battery acid, or unknown chemical spills, follow the product's safety and spill instructions rather than treating them like ordinary dirt.</p>
+
+    <h3>2. How to Remove Tire Marks From Epoxy Floors</h3>
+    <p>Have you noticed black marks where your car tires sit?</p>
+    <p>Warm tires can sometimes transfer rubber compounds onto a coated floor. These marks may be more noticeable on light-coloured finishes.</p>
+    <p>You can clean this area easily with a pH-neutral cleaner and a soft cloth.</p>
+    <p>For marks that won't lift, try a coating-safe degreaser. Let it work, then scrub gently and rinse.</p>
+    <p>Don't use a rough scrubbing pad. It may remove the mark but leave scratches behind.</p>
+    <p>If the surface has softened, peeled, or been damaged, the problem may be more than a surface stain.</p>
+
+    <h3>3. How to Remove Road Salt and White Residue</h3>
+    <p>Road salt is a common concern for garage floors in Canada.</p>
+    <p>In cold weather, snowmelt and road residue often come in on your tires.</p>
+    <p>To remove it:</p>
+    <ul>
+    <li>Sweep away dry grit and loose salt.</li>
+    <li>Wipe or mop the area with warm water.</li>
+    <li>Use a pH-neutral cleaner if needed.</li>
+    <li>Rinse and remove the dirty water.</li>
+    <li>Dry the surface.</li>
+    </ul>
+
+    <p>Don't leave salt and grit sitting on the floor all winter. Regular removal helps reduce wear and keeps your garage looking cleaner.</p>
+
+    <h3>4. How to Remove Mud and Dirt</h3>
+    <p>Mud is often the easiest mess to deal with.</p>
+    <p>Let heavy mud dry enough that you can remove it without spreading it. Then sweep it up and mop the area with warm water.</p>
+    <p>For dried-on dirt, soften it with a little water before wiping it away.</p>
+    <p>Avoid scraping the surface with metal tools.</p>
+
+    <h2>How Often Should You Clean Your Epoxy Garage Floor?</h2>
+    <p>You don't need to clean your garage deep every weekend.</p>
+    <p>The best cleaning schedule depends on how often you use the space, the weather, and how much dirt your vehicle brings in.</p>
+    <p>Here's a simple routine for most Canadian households.</p>
+    <div class="overflow-x-auto">
+      <table>
+        <thead>
+          <tr>
+            <th>When</th>
+            <th>What to do</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>As soon as possible</td>
+            <td>Clean oil, chemical spills, and fresh stains</td>
+          </tr>
+          <tr>
+            <td>Every week</td>
+            <td>Sweep loose dirt, sand, and dust</td>
+          </tr>
+          <tr>
+            <td>Every month</td>
+            <td>Mop with a suitable mild cleaner</td>
+          </tr>
+          <tr>
+            <td>During wet or snowy weather</td>
+            <td>Remove excess water, salt, and road grit more often</td>
+          </tr>
+          <tr>
+            <td>Every 3–6 months</td>
+            <td>Deep clean and check for signs of damage</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>This schedule is a starting point, not a strict rule. A garage used as a workshop may need more frequent care than one used mainly for storage.</p>
+
+    <h2>How to Maintain an Epoxy Garage Floor for Long-Lasting Results</h2>
+    <p>Epoxy flooring is known for its durability, but no coating is completely maintenance-free. Good habits help protect the finish and reduce unnecessary wear.</p>
+
+    <h3>Keep Sand and Grit Off the Floor</h3>
+    <p>Small stones and sand can act like sandpaper when car tires roll over them.</p>
+    <p>Sweep regularly, especially near the garage entrance.</p>
+
+    <h3>Use Mats in High-Traffic Areas</h3>
+    <p>A suitable garage mat compatible with your coating can help catch dirt and moisture.</p>
+    <p>Some rubber-backed products may leave marks on certain finishes.</p>
+
+    <h3>Avoid Dragging Heavy Objects</h3>
+    <p>Dragging metal shelves, toolboxes, or heavy equipment can scratch the floor.</p>
+    <p>Lift heavy items when possible. Use suitable protective pads beneath workbenches and storage units.</p>
+
+    <h3>Clean Spills Without Delay</h3>
+    <p>Although epoxy coatings can resist many common stains, that doesn't mean that every chemical is safe to leave on the floor.</p>
+    <p>Clean spills promptly using a method approved for the coating.</p>
+
+    <h3>Check for Chips and Peeling</h3>
+    <p>Look over your garage floor from time to time.</p>
+    <p>If you notice peeling edges, cracks, bubbling, or lifted areas, contact a flooring professional.</p>
+    <p>Cleaning helps preserve a healthy coating, but it cannot repair a coating that has already failed.</p>
+
+    <h2>Epoxy Garage Floor Cleaning Tips for Surrey and the Lower Mainland</h2>
+    <p>If you live in Surrey, Vancouver, Langley, Delta, or nearby communities, you already know how much rain the region can get.</p>
+    <p>That wet weather can affect what ends up on your garage floor.</p>
+
+    <h3>During Rainy Months</h3>
+    <p>Wet tires bring water, dirt, and road grime into the garage.</p>
+    <p>Remove standing water instead of letting it sit in puddles. A squeegee can make this job easier. Keep leaves and grit away from the entrance so you don't track them inside.</p>
+    
+    <h3>During Winter</h3>
+    <p>The Lower Mainland usually has milder winters than many other parts of Canada, but snow, freezing temperatures, and road de-icers can still be an issue.</p>
+    <p>After a stretch of winter weather, check for white salt residue and gritty deposits around your parking area.</p>
+    <p>Sweep and rinse them away when practical.</p>
+
+    <h3>During Spring</h3>
+    <p>Spring is a good time for a deeper garage clean.</p>
+    <p>Move stored items, wash the floor, clean along the edges, and inspect the coating for signs of wear.</p>
+    <p>This can also help you spot small problems before they become larger ones.</p>
+
+    <h2>Can You Pressure Wash an Epoxy Garage Floor?</h2>
+    <p>In some cases, yes. But you don't need pressure washing for regular epoxy garage floor cleaning.</p>
+    <p>A soft mop, mild cleaner, and clean water are often enough.</p>
+    <p>A pressure washer is another option, but only after the installer confirms it is safe./p>
+    <p>Use a gentle setting and a wide spray pattern. Keep the nozzle moving and avoid directing a strong stream at floor edges, joints, or damaged spots.</p>
+    <p>Never pressure wash a floor with peeling or loose coating. The water pressure may make the damage worse.</p>
+    <p>When in doubt, stick to a garden hose or damp mop.</p>
+
+    <h2>How to Clean Epoxy Floors Without Dulling Them</h2>
+    <p>A shiny epoxy floor can lose its fresh look when dirt, grit, or cleaning residue builds up. Fortunately, dullness doesn't always mean the coating is damaged.</p>
+    <p>Try these steps first:</p>
+    <ul>
+    <li>Sweep the floor to remove grit.</li>
+    <li>Mop with an approved pH-neutral cleaner.</li>
+    <li>Rinse away any cleaner residue.</li>
+    <li>Remove dirty water rather than letting it dry on the floor.</li>
+    <li>Let the surface dry fully and check the finish.</li>
+    </ul>
+
+    <p>If the floor still looks cloudy, check whether the haze is on the surface or part of the coating itself.</p>
+    <p>Repeated scratches, worn topcoats, and chemical damage won't disappear with more cleaning. In those cases, a flooring professional can help determine whether you need repairs or a recoat.</p>
+
+    <h2>Final Thoughts: Keep Your Epoxy Garage Floor Looking Its Best</h2>
+    <p>Keeping an epoxy garage floor clean doesn't have to be a big job.</p>
+    <p>A quick weekly sweep, gentle monthly wash, and prompt stain removal can make a real difference.</p>
+    <p>The key is using the right cleaner, avoiding harsh scrubbing, and paying attention to seasonal dirt and moisture.</p>
+    <p>With regular care, your garage floor can stay clean, attractive, and easy to maintain for years.</p>
+    <p>Need Help With Your Epoxy Garage Floor in Surrey, BC?</p>
+    <p>At Seven Shades Epoxy Coating LTD, we help homeowners in Surrey and surrounding Lower Mainland communities improve their garages with professionally installed epoxy flooring systems.</p>
+    <p>Whether you're planning a new garage floor or want guidance on an existing coating, our team can help you explore the right solution.</p>
+    <p>Contact <a href="${BASE_URL}">Seven Shades Epoxy</a> today to discuss your flooring needs.</p>
+   
+    `,
+    keyTakeaways: [
+      "Sweep first, mop second. Otherwise, loose sand and grit can scratch your floor.",
+      "Use a suitable pH-neutral cleaner. A good option, but it must be approved for your coating system.",
+      "Clean oil, tire marks, and road salt early. Fresh stains are usually easier to remove.",
+      "Avoid harsh chemicals and rough brushes. They may dull or damage the finish.",
+      "A simple weekly routine goes a long way. Regular care can help your epoxy floor last longer."
+    ],
+    faqs: [
+      {
+        question: "Can I clean my epoxy garage floor myself?",
+        answer: "Yes. You can do most routine cleaning with a soft broom, microfibre mop, warm water, and a coating-safe cleaner. You usually don't need special equipment.",
+      },
+      {
+        question: "Can you use dish soap on epoxy garage floors?",
+        answer: "Yes, some coating systems can be cleaned with a diluted dish soap solution. Check your coating's care instructions first and rinse well to prevent residue.",
+      },
+      {
+        question: "Can you use vinegar to clean epoxy floors?",
+        answer: "Vinegar isn't ideal for regular cleaning. Its acidity may affect certain finishes with repeated use. A pH-neutral cleaner is a safer place to start.",
+      },
+      {
+        question: "Does road salt damage epoxy garage floors?",
+        answer: "A sound, properly installed coating is designed to handle normal garage use, but salt, de-icing chemicals, and gritty residue should not be left to build up. Regular cleaning helps protect the finish.",
+      },
+      {
+        question: "How long does an epoxy garage floor last?",
+        answer: "No single lifespan applies to every epoxy floor. The coating system, surface preparation, installation quality, vehicle traffic, and maintenance all play a part. Proper care can help extend its useful life.",
+      },
+      {
+        question: "What's the easiest way to deep clean an epoxy garage floor?",
+        answer: "Remove stored items, sweep thoroughly, treat oil and tire marks, mop with an approved cleaner, rinse as needed, and dry the floor. Check for chips or peeling while you're cleaning.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

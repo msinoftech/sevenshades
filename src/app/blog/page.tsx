@@ -59,7 +59,12 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     ? Math.floor(Math.random() * blogPosts.length)
     : 0;
   const featured = blogPosts[featuredIndex];
-  const rest = blogPosts.filter((_, index) => index !== featuredIndex);
+  const rest = blogPosts
+    .filter((_, index) => index !== featuredIndex)
+    .sort(
+      (a, b) =>
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+    );
   const totalPages = Math.max(1, Math.ceil(rest.length / POSTS_PER_PAGE));
   const requestedPage = Number(pageParam);
   const currentPage = Number.isFinite(requestedPage)
