@@ -11,33 +11,33 @@ import { serviceFaqs } from "@/lib/service-faqs";
 import { BASE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Residential Epoxy Flooring Surrey, BC | Seven Shades",
-  description: "Give basements and interior concrete floors a seamless, durable finish with residential epoxy flooring in Surrey, BC. Book your free estimate today!",
-  keywords: ["residential epoxy flooring", "home epoxy floors", "garage epoxy flooring", "basement epoxy floor", "residential floor coating"],
+  title: "Residential Epoxy Floor Coating Installer in Surrey",
+  description: "Get your free estimate in Surrey! from Seven Shades, an exp. residential epoxy flooring contractor, offering durable color coatings for your basement and interior floors.",
+  keywords: ["residential epoxy floor coating contractors surrey", "epoxy basement floor paint contractors in surrey", "epoxy basement floor contractors", "residential epoxy flooring expert", "epoxy basement floor colors", "interior residential epoxy flooring surrey" ],
   alternates: {
     canonical: `${BASE_URL}/services/residential`,
   },
   openGraph: {
-    title: "Residential Epoxy Flooring Surrey, BC | Seven Shades",
-    description: "Give basements and interior concrete floors a seamless, durable finish with residential epoxy flooring in Surrey, BC. Book your free estimate today!",
+    title: "Residential Epoxy Floor Coating Installer in Surrey",
+    description: "Get your free estimate in Surrey! from Seven Shades, an exp. residential epoxy flooring contractor, offering durable color coatings for your basement and interior floors.",
     type: "website",
     images: [
       {
         url: BASE_URL + "/images/services/service-garage.webp",
-        alt: "Residential Epoxy Flooring Surrey, BC | Seven Shades",
+        alt: "Residential Epoxy Floor Coating Installer in Surrey",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Residential Epoxy Flooring Surrey, BC | Seven Shades",
-    description: "Give basements and interior concrete floors a seamless, durable finish with residential epoxy flooring in Surrey, BC. Book your free estimate today!",
+    title: "Residential Epoxy Floor Coating Installer in Surrey",
+    description: "Get your free estimate in Surrey! from Seven Shades, an exp. residential epoxy flooring contractor, offering durable color coatings for your basement and interior floors.",
     images: [BASE_URL + "/images/services/service-residential.png"],
   },  
 };
 
 const specs = [
-  { label: "Best for", value: "Homes · Garages · Basements" },
+  { label: "Best for", value: "Homes · Interior· Basements" },
   { label: "Finish options", value: "Solid · Flake · Metallic" },
   { label: "Typical install", value: "2–4 days" },
   { label: "Return to use", value: "Usually 48–72 hours" },
@@ -99,18 +99,21 @@ const finishes = [
     name: "Solid Color",
     detail: "Clean continuous color with gloss or satin clear — ideal for modern homes and tidy garage or basement builds.",
     image: "/images/services/service-commercial.webp",
+    alt: "residential epoxy floor coating contractors surrey",
   },
   {
     id: "flake",
     name: "Full Flake",
     detail: "Multi-tone broadcast for grip, style, and everyday forgiveness in busy family spaces.",
     image: "/images/services/service-garage.webp",
+    alt: "epoxy basement floor paint contractors in surrey",
   },
   {
     id: "metallic",
     name: "Metallic",
     detail: "Liquid depth and movement for feature rooms, basements, and collector bays that deserve a statement floor.",
     image: "/images/services/service-metallic.webp",
+    alt: "epoxy basement floor contractors",
   },
 ];
 
@@ -163,14 +166,14 @@ export default function ResidentialPage() {
     <>
 
       <PageHeader
-        eyebrow="RESIDENTIAL EPOXY SYSTEMS"
+        eyebrow="RESIDENTIAL COATING SYSTEMS"
         title={
           <>
-            Floors Built For{" "}
+            Epoxy Floors Built For {" "}
             <span className="text-[var(--brand-color)]">Home Life.</span>
           </>
         }
-        description="Residential epoxy for garages, basements, mudrooms, and living spaces — stylish, easy to clean, and engineered for everyday family use."
+        description="Residential epoxy for basements, mudrooms, and living spaces — stylish, easy to clean, and engineered for everyday use."
         primaryAction={{ href: "/contact-us", label: "Get Free Quote" }}
         secondaryAction={{
           href: "#system",
@@ -229,7 +232,7 @@ export default function ResidentialPage() {
                 size="section"
                 tone="dark"
                 eyebrow="THE SYSTEM"
-                title={<>More Than Paint. <span className="text-[var(--brand-color)]">A Real Floor Build.</span></>}
+                title={<>Epoxy Basement Floor Coating <span className="text-[var(--brand-color)]">That’s Far More Than Paint</span></>}
                 description={
                   <>
                   <p>Your home floor should handle muddy shoes, parked cars, laundry spills, and weekend projects — without looking worn out. Seven Shades residential epoxy turns ordinary concrete into a seamless, easy-care surface with style that fits the house.</p>
@@ -258,7 +261,7 @@ export default function ResidentialPage() {
               <div className="relative aspect-[5/4] overflow-hidden rounded-[1.75rem] sm:rounded-[2.1rem]">
                 <Image
                   src="/images/services/service-garage.webp"
-                  alt="Residential garage with finished epoxy flooring"
+                  alt="residential epoxy floor coating contractors surrey"
                   width={800}
                   height={800}
                   className="w-full h-full object-cover"
@@ -270,7 +273,7 @@ export default function ResidentialPage() {
                 <div className="relative aspect-[4/3]">
                   <Image
                     src="/images/services/service-metallic.webp"
-                    alt="Residential metallic epoxy flooring detail"
+                    alt="epoxy basement floor paint contractors in surrey"
                     width={400}
                     height={400}
                     className="w-full h-full object-cover"
@@ -358,8 +361,8 @@ export default function ResidentialPage() {
                 size="section"
                 tone="dark"
                 eyebrow="FINISH LIBRARY"
-                title={<>Choose How Your Home <span className="text-[var(--brand-color)]">Shows Up.</span></>}
-                description="Matched to room use, style preference, and how much grip or visual depth you want."
+                title={<>Choose Colours and Finishes <span className="text-[var(--brand-color)]">That Suit Your Home</span></>}
+                description="Based on use, interior style, and how much grip or visual depth you want."
               />
               </div>
           </div>
@@ -369,7 +372,7 @@ export default function ResidentialPage() {
               <li key={finish.id}>
                 <OverlayCard
                   image={finish.image}
-                  imageAlt={finish.name}
+                  imageAlt={finish.alt}
                   title={finish.name}
                   description={finish.detail}
                   alwaysVisible
@@ -395,12 +398,12 @@ export default function ResidentialPage() {
                 tag="h2"
                 size="section"
                 tone="dark"
-                eyebrow="HOW WE INSTALL"
+                eyebrow="How We Prepare and Install"
                 title={
                   <>
-                    From Bare Slab To{" "}
+                    Epoxy Floor Coatings in {" "}
                     <span className="text-[var(--brand-color)]">
-                      Home-Ready.
+                    Surrey Homes
                     </span>
                   </>
                 }
@@ -458,8 +461,8 @@ export default function ResidentialPage() {
               eyebrow="QUESTIONS"
               title={
                 <>
-                  Residential Floor{" "}
-                  <span className="text-[var(--brand-color)]">FAQs</span>
+                  Residential Epoxy{" "}
+                  <span className="text-[var(--brand-color)]">Flooring FAQs</span>
                 </>
               }
               description="Clear answers before you commit — room fit, cure timing, finishes, and long-term care."

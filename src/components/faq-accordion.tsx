@@ -146,7 +146,7 @@ export default function FaqAccordion({
               )}
             >
               <div className="max-w-3xl px-5 pb-5 leading-relaxed text-black/55 sm:px-6 sm:pb-6 sm:pl-[4.1rem]">
-                <p className="m-0">{item.answer}</p>
+                <p className="m-0" dangerouslySetInnerHTML={{ __html: item.answer }} />
               </div>
             </div>
           </li>

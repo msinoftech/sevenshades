@@ -44,24 +44,20 @@ export const serviceFaqs: Record<string, ServiceFaq[]> = {
   ],
   "residential": [
     {
-      question: "How long does residential epoxy flooring last?",
-      answer:
-        "A properly prepped Seven Shades residential system is built for years of normal home use. Lifespan depends on prep quality, traffic, UV exposure, chemicals, and how the space is maintained.",
+      question: "Is epoxy coating good for residential flooring?",
+      answer: "Epoxy flooring, a seamless, durable concrete coating, is an ideal choice for residential garages, basements, and kitchens. But it may be less ideal for living rooms or bedrooms, depending on your uses and requirements.",
     },
     {
-      question: "Which rooms in my home can use epoxy?",
-      answer:
-        "Garages, basements, mudrooms, laundry rooms, workshops, and many living-area conversions are strong fits. We’ll confirm moisture, slab condition, and the best finish for each room.",
+      question: "Is an epoxy floor better than tiles for a home?",
+      answer: "Neither epoxy floors nor tiles are universally 'better'.  The best choice depends on your budget, maintenance tolerance, and the floor where it will be installed. <br />Epoxy floors offer a smooth, easy-to-clean surface with a long lifespan for sleek, modern interiors. On the other hand, tiles let you choose endless patterns, colours, and textures, and they're also easy to repair and maintain.",
     },
     {
-      question: "Will epoxy peel in a garage or basement?",
-      answer:
-        "Peeling is almost always a prep or moisture issue — not epoxy itself. We grind for mechanical adhesion, address contaminants, and only install when conditions support a lasting bond.",
+      question: "Can I coat my house floor with epoxy in Surrey?",
+      answer: "Yes, you can epoxy your house floor, but suitability depends heavily on the specific room and its usage, moisture levels, concrete condition, and preparation.",
     },
     {
-      question: "Solid, flake, or metallic — which should I choose?",
-      answer:
-        "Solid suits clean modern looks. Flake adds grip and hides dust between cleanings. Metallic creates a distinctive feature floor. We’ll recommend based on room use and the style you want.",
+      question: "How long can residential epoxy flooring last in Surrey?",
+      answer: "Residential epoxy coating floors typically can last up to 20 years. How long does it last in Surrey? It varies depending on the prep quality, traffic, UV exposure, chemicals, and how the space is maintained. <br />Sometimes epoxy floors last 25 years or more if coated by a professional contractor like Seven Shades and maintained properly, as directed.",
     },
   ],
   "metallic-epoxy": [
