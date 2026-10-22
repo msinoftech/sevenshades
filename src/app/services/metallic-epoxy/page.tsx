@@ -12,14 +12,14 @@ import { serviceFaqs } from "@/lib/service-faqs";
 import { BASE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Metallic Epoxy Floors Surrey, BC | Seven Shades",
+  title: "Metallic Epoxy Floor Installers Surrey | Get a Free Quote ",
   description: "Create a distinctive floor with metallic epoxy finishes featuring seamless patterns and lasting durability. Available across Surrey, BC. Get a free quote!",
   keywords: ["metallic epoxy flooring", "metallic epoxy floor coating", "decorative metallic floors", "luxury epoxy flooring", "metallic epoxy installation"],
   alternates: {
     canonical: `${BASE_URL}/services/metallic-epoxy`,
   },
   openGraph: {
-    title: "Metallic Epoxy Floors Surrey, BC | Seven Shades",
+    title: "Metallic Epoxy Floor Installers Surrey | Get a Free Quote ",
     description: "Create a distinctive floor with metallic epoxy finishes featuring seamless patterns and lasting durability. Available across Surrey, BC. Get a free quote!",
     type: "website",
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Metallic Epoxy Floors Surrey, BC | Seven Shades",
+    title: "Metallic Epoxy Floor Installers Surrey | Get a Free Quote ",
     description: "Create a distinctive floor with metallic epoxy finishes featuring seamless patterns and lasting durability. Available across Surrey, BC. Get a free quote!",
     images: [BASE_URL + "/images/services/service-metallic.webp"],
   },
@@ -166,15 +166,15 @@ export default function MetallicEpoxyPage() {
     <>
 
       <PageHeader
-        eyebrow="METALLIC EPOXY SYSTEMS"
+        eyebrow="METALLIC COATING SYSTEMS"
         title={
           <>
-            Floors With{" "}
-            <span className="text-[var(--brand-color)]">Liquid Depth.</span>
+            Custom Metallic Epoxy Floors{" "}
+            <span className="text-[var(--brand-color)]">With Liquid Depth.</span>
           </>
         }
-        description="Stunning metallic epoxy for showrooms, residences, and feature spaces — custom color movement, showroom clarity, and artistry sealed to last."
-        primaryAction={{ href: "/contact-us", label: "Get Free Quote" }}
+        description="In Surrey & Nearby for showrooms, residences, and feature spaces — custom color movement, showroom clarity, and artistry sealed to last."
+        primaryAction={{ href: "/contact-us", label: "Get a Free Metallic Epoxy Quote" }}
         secondaryAction={{
           href: "#system",
           label: "Browse Systems",
@@ -231,8 +231,8 @@ export default function MetallicEpoxyPage() {
                 tag="h2"
                 size="section"
                 tone="dark"
-                eyebrow="THE SYSTEM"
-                title={<>More Than Paint. <span className="text-[var(--brand-color)]">A Real Floor Build.</span></>}
+                eyebrow="What Is a Metallic Epoxy"
+                title={<>A Full-Floor Metallic Coating <span className="text-[var(--brand-color)]">for Homes and Feature Spaces</span></>}
                 description={
                   <>
                   <p>Metallic epoxy is where performance meets design. Pigments move through the resin to create liquid metal depth — luminous, dimensional, and unique to every install. Seven Shades metallic systems turn ordinary concrete into a feature surface that defines the room.</p>
@@ -301,16 +301,16 @@ export default function MetallicEpoxyPage() {
               align="center"
               size="section"
               tone="light"
-              eyebrow="WHY METALLIC EPOXY"
+              eyebrow="Why Surrey Homeowners and Businesses Choose?"
               title={
                 <>
-                  Performance You Notice{" "}
+                  A Unique Finish You Notice {" "}
                   <span className="text-[var(--brand-color)]">
-                    In Every Reflection.
+                  In Every Reflection
                   </span>
                 </>
               }
-              description="A metallic floor isn’t coating — it’s composition. Custom pigment movement, luminous depth, and a clear finish that keeps the artistry present every day."
+              description="A metallic installation isn’t a coating — it’s a composition, and more than just floor paint and other systems."
               descriptionClassName="mx-auto max-w-2xl text-white/60"
             />
           </div>
@@ -360,8 +360,8 @@ export default function MetallicEpoxyPage() {
                 tag="h2"
                 size="section"
                 tone="dark"
-                eyebrow="FINISH LIBRARY"
-                title={<>Choose How Your Metallic <span className="text-[var(--brand-color)]">Moves.</span></>}
+                eyebrow="Explore Seven Shades’s"
+                title={<>Colours and Finishes That <span className="text-[var(--brand-color)]">Suit Your Space</span></>}
                 description="Matched to lighting, architecture, and the mood you want the floor to carry."
               />
               </div>
@@ -407,7 +407,7 @@ export default function MetallicEpoxyPage() {
                     </span>
                   </>
                 }
-                description="Prep first. Color with intention. Every coat earns the next one."
+                description="Professional metallic epoxy floor contractors meet your expectations, from prep to finish."
                 descriptionClassName="max-w-md"
               />
 
@@ -518,8 +518,8 @@ export default function MetallicEpoxyPage() {
       </section>
 
       <CallToAction
-        title={<>Ready For A <span className="text-[var(--brand-color)]">Metallic</span> Finish?</>}
-        description="Get a free quote for a distinctive metallic epoxy floor with seamless patterns and lasting durability."
+        title={<>Ready to Bring <span className="text-[var(--brand-color)]">Metallic Floor</span> Design to Life</>}
+        description="Choose Surrey's best metallic epoxy contractor for a unique flooring system with seamless patterns and lasting durability."
       />
     </>
   );

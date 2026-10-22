@@ -472,7 +472,7 @@ export default function ResidentialPage() {
 
           <div className="mx-auto mt-12 max-w-3xl sm:mt-14">
             <FaqAccordion items={faqs} defaultOpenIndex={0} />
-          </div>
+          </div>          
         </div>
       </section>
 

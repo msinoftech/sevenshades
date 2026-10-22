@@ -225,7 +225,7 @@ const serviceSeo: Record<string, { title: string; description: string; serviceTy
     serviceType: "Residential Epoxy Flooring",
   },
   "metallic-epoxy": {
-    title: "Metallic Epoxy Floors Surrey, BC | Seven Shades",
+    title: "Metallic Epoxy Floor Installers Surrey | Get a Free Quote ",
     description: "Decorative metallic epoxy flooring with custom colour movement, visual depth, and a distinctive premium finish.",
     serviceType: "Metallic Epoxy Flooring",
   },
